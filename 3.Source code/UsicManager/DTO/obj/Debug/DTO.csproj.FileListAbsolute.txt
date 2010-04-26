@@ -1,0 +1,5 @@
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout\3.Source code\UsicManager\DTO\bin\Debug\DTO.dll
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout\3.Source code\UsicManager\DTO\bin\Debug\DTO.pdb
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout\3.Source code\UsicManager\DTO\obj\Debug\ResolveAssemblyReference.cache
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout\3.Source code\UsicManager\DTO\obj\Debug\DTO.dll
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout\3.Source code\UsicManager\DTO\obj\Debug\DTO.pdb
