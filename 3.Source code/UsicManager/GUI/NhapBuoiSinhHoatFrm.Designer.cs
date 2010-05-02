@@ -36,7 +36,7 @@
             this.lblDiaDiem = new System.Windows.Forms.Label();
             this.txtDiaDiem = new System.Windows.Forms.TextBox();
             this.grbNoiDung = new System.Windows.Forms.GroupBox();
-            this.rtfNoiDung = new System.Windows.Forms.RichTextBox();
+            this.txtNoiDung = new System.Windows.Forms.TextBox();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -84,7 +84,8 @@
             // 
             // dtpThoiGian
             // 
-            this.dtpThoiGian.CustomFormat = "dd/mm/yyyy";
+            this.dtpThoiGian.CustomFormat = "dd/MM/yyyy";
+            this.dtpThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpThoiGian.Location = new System.Drawing.Point(82, 106);
             this.dtpThoiGian.Name = "dtpThoiGian";
             this.dtpThoiGian.Size = new System.Drawing.Size(114, 20);
@@ -108,7 +109,7 @@
             // 
             // grbNoiDung
             // 
-            this.grbNoiDung.Controls.Add(this.rtfNoiDung);
+            this.grbNoiDung.Controls.Add(this.txtNoiDung);
             this.grbNoiDung.Location = new System.Drawing.Point(228, 46);
             this.grbNoiDung.Name = "grbNoiDung";
             this.grbNoiDung.Size = new System.Drawing.Size(200, 124);
@@ -116,13 +117,13 @@
             this.grbNoiDung.TabStop = false;
             this.grbNoiDung.Text = "Nội dung chính";
             // 
-            // rtfNoiDung
+            // txtNoiDung
             // 
-            this.rtfNoiDung.Location = new System.Drawing.Point(7, 20);
-            this.rtfNoiDung.Name = "rtfNoiDung";
-            this.rtfNoiDung.Size = new System.Drawing.Size(187, 96);
-            this.rtfNoiDung.TabIndex = 0;
-            this.rtfNoiDung.Text = "";
+            this.txtNoiDung.Location = new System.Drawing.Point(7, 15);
+            this.txtNoiDung.Multiline = true;
+            this.txtNoiDung.Name = "txtNoiDung";
+            this.txtNoiDung.Size = new System.Drawing.Size(187, 101);
+            this.txtNoiDung.TabIndex = 0;
             // 
             // btnThoat
             // 
@@ -181,6 +182,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NhapBuoiSinhHoatFrm";
             this.grbNoiDung.ResumeLayout(false);
+            this.grbNoiDung.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,10 +198,10 @@
         private System.Windows.Forms.Label lblDiaDiem;
         private System.Windows.Forms.TextBox txtDiaDiem;
         private System.Windows.Forms.GroupBox grbNoiDung;
-        private System.Windows.Forms.RichTextBox rtfNoiDung;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnDiemDanh;
+        private System.Windows.Forms.TextBox txtNoiDung;
     }
 }

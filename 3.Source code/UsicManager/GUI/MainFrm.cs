@@ -51,5 +51,61 @@ namespace GUI
             frm.Show();
         }
 
+        private void cậpnhậtHộiViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CapNhatHoiVienFrm frm = new CapNhatHoiVienFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void thêmThứhạngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NhapThuHangFrm frm = new NhapThuHangFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void thêmChuyênMônToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NhapChuyenMonFrm frm = new NhapChuyenMonFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void thêmHoạtĐộngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NhapHoatDongFrm frm = new NhapHoatDongFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void thêmKhoảnThuChiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NhapChiPhiFrm frm = new NhapChiPhiFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void tháchĐấuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NhapThachDauFrm frm = new NhapThachDauFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void điểmdanhHoạtĐộngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DiemDanhHoatDongFrm frm = new DiemDanhHoatDongFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void ghiNhậnKếtQuảTháchĐấuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CapNhatKetQuaThachDauFrm frm = new CapNhatKetQuaThachDauFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
     }
 }
