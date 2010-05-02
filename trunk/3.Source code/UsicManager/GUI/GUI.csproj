@@ -48,11 +48,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainFrm.cs">
+    <Compile Include="CapNhatHoiVienFrm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatHoiVienFrm.Designer.cs">
+      <DependentUpon>CapNhatHoiVienFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiemDanhFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiemDanhFrm.Designer.cs">
+      <DependentUpon>DiemDanhFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="NhapBuoiSinhHoatFrm.cs">
       <SubType>Form</SubType>
@@ -68,6 +80,14 @@
       <DependentUpon>NhapHoiVienFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CapNhatHoiVienFrm.resx">
+      <DependentUpon>CapNhatHoiVienFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiemDanhFrm.resx">
+      <DependentUpon>DiemDanhFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -85,6 +105,14 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="TraCuuHoiVienFrm.resx">
+      <DependentUpon>TraCuuHoiVienFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XoaHoiVienFrm.resx">
+      <DependentUpon>XoaHoiVienFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -98,6 +126,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TraCuuHoiVienFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraCuuHoiVienFrm.Designer.cs">
+      <DependentUpon>TraCuuHoiVienFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XoaHoiVienFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XoaHoiVienFrm.Designer.cs">
+      <DependentUpon>XoaHoiVienFrm.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

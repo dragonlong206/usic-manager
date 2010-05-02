@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class NhapHoiVienFrm
+    partial class CapNhatHoiVienFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.txtChucVu = new System.Windows.Forms.TextBox();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.cboLoaiHoiVien = new System.Windows.Forms.ComboBox();
+            this.lblChucVu = new System.Windows.Forms.Label();
+            this.lblLoaiHoiVien = new System.Windows.Forms.Label();
+            this.btnCapNhat = new System.Windows.Forms.Button();
+            this.chkHoiVien = new System.Windows.Forms.CheckBox();
+            this.grbThongTinHoiVien = new System.Windows.Forms.GroupBox();
+            this.lblThuongTru = new System.Windows.Forms.Label();
+            this.txtChoO = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.grbThongTinCaNhan = new System.Windows.Forms.GroupBox();
+            this.lblChoO = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtDienThoai = new System.Windows.Forms.TextBox();
+            this.grbThongTinCaNhan = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.lblDienThoai = new System.Windows.Forms.Label();
@@ -41,25 +54,114 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.grbThongTinDoanHoi = new System.Windows.Forms.GroupBox();
-            this.chkHoiVien = new System.Windows.Forms.CheckBox();
             this.chkDangVien = new System.Windows.Forms.CheckBox();
             this.chkDoanVien = new System.Windows.Forms.CheckBox();
-            this.grbThongTinHoiVien = new System.Windows.Forms.GroupBox();
-            this.txtChucVu = new System.Windows.Forms.TextBox();
-            this.cboLoaiHoiVien = new System.Windows.Forms.ComboBox();
-            this.lblChucVu = new System.Windows.Forms.Label();
-            this.lblLoaiHoiVien = new System.Windows.Forms.Label();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.lblChoO = new System.Windows.Forms.Label();
-            this.txtChoO = new System.Windows.Forms.TextBox();
-            this.lblThuongTru = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.grbThongTinHoiVien.SuspendLayout();
             this.grbThongTinCaNhan.SuspendLayout();
             this.grbThongTinDoanHoi.SuspendLayout();
-            this.grbThongTinHoiVien.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // txtChucVu
+            // 
+            this.txtChucVu.Location = new System.Drawing.Point(117, 55);
+            this.txtChucVu.Name = "txtChucVu";
+            this.txtChucVu.Size = new System.Drawing.Size(100, 20);
+            this.txtChucVu.TabIndex = 4;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(426, 303);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 9;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(321, 303);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 23);
+            this.btnHuy.TabIndex = 11;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
+            // cboLoaiHoiVien
+            // 
+            this.cboLoaiHoiVien.FormattingEnabled = true;
+            this.cboLoaiHoiVien.Items.AddRange(new object[] {
+            "Bình thường",
+            "Chính thức"});
+            this.cboLoaiHoiVien.Location = new System.Drawing.Point(117, 16);
+            this.cboLoaiHoiVien.Name = "cboLoaiHoiVien";
+            this.cboLoaiHoiVien.Size = new System.Drawing.Size(100, 21);
+            this.cboLoaiHoiVien.TabIndex = 2;
+            // 
+            // lblChucVu
+            // 
+            this.lblChucVu.AutoSize = true;
+            this.lblChucVu.Location = new System.Drawing.Point(17, 58);
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(47, 13);
+            this.lblChucVu.TabIndex = 0;
+            this.lblChucVu.Text = "Chức vụ";
+            // 
+            // lblLoaiHoiVien
+            // 
+            this.lblLoaiHoiVien.AutoSize = true;
+            this.lblLoaiHoiVien.Location = new System.Drawing.Point(17, 19);
+            this.lblLoaiHoiVien.Name = "lblLoaiHoiVien";
+            this.lblLoaiHoiVien.Size = new System.Drawing.Size(67, 13);
+            this.lblLoaiHoiVien.TabIndex = 0;
+            this.lblLoaiHoiVien.Text = "Loại hội viên";
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.Location = new System.Drawing.Point(210, 303);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(75, 23);
+            this.btnCapNhat.TabIndex = 10;
+            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.UseVisualStyleBackColor = true;
+            // 
+            // chkHoiVien
+            // 
+            this.chkHoiVien.AutoSize = true;
+            this.chkHoiVien.Location = new System.Drawing.Point(19, 58);
+            this.chkHoiVien.Name = "chkHoiVien";
+            this.chkHoiVien.Size = new System.Drawing.Size(80, 17);
+            this.chkHoiVien.TabIndex = 0;
+            this.chkHoiVien.Text = "Là Hội viên";
+            this.chkHoiVien.UseVisualStyleBackColor = true;
+            // 
+            // grbThongTinHoiVien
+            // 
+            this.grbThongTinHoiVien.Controls.Add(this.txtChucVu);
+            this.grbThongTinHoiVien.Controls.Add(this.cboLoaiHoiVien);
+            this.grbThongTinHoiVien.Controls.Add(this.lblChucVu);
+            this.grbThongTinHoiVien.Controls.Add(this.lblLoaiHoiVien);
+            this.grbThongTinHoiVien.Location = new System.Drawing.Point(266, 197);
+            this.grbThongTinHoiVien.Name = "grbThongTinHoiVien";
+            this.grbThongTinHoiVien.Size = new System.Drawing.Size(235, 83);
+            this.grbThongTinHoiVien.TabIndex = 8;
+            this.grbThongTinHoiVien.TabStop = false;
+            this.grbThongTinHoiVien.Text = "Thông tin hội viên";
+            // 
+            // lblThuongTru
+            // 
+            this.lblThuongTru.AutoSize = true;
+            this.lblThuongTru.Location = new System.Drawing.Point(23, 128);
+            this.lblThuongTru.Name = "lblThuongTru";
+            this.lblThuongTru.Size = new System.Drawing.Size(91, 13);
+            this.lblThuongTru.TabIndex = 7;
+            this.lblThuongTru.Text = "Địa chỉ thường trú";
+            // 
+            // txtChoO
+            // 
+            this.txtChoO.Location = new System.Drawing.Point(123, 93);
+            this.txtChoO.Name = "txtChoO";
+            this.txtChoO.Size = new System.Drawing.Size(352, 20);
+            this.txtChoO.TabIndex = 6;
             // 
             // lblTitle
             // 
@@ -67,11 +169,34 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Blue;
-            this.lblTitle.Location = new System.Drawing.Point(119, 9);
+            this.lblTitle.Location = new System.Drawing.Point(148, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(282, 24);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "NHẬP THÔNG TIN HỘI VIÊN";
+            this.lblTitle.Size = new System.Drawing.Size(219, 24);
+            this.lblTitle.TabIndex = 5;
+            this.lblTitle.Text = "THÔNG TIN HỘI VIÊN";
+            // 
+            // lblChoO
+            // 
+            this.lblChoO.AutoSize = true;
+            this.lblChoO.Location = new System.Drawing.Point(20, 96);
+            this.lblChoO.Name = "lblChoO";
+            this.lblChoO.Size = new System.Drawing.Size(72, 13);
+            this.lblChoO.TabIndex = 5;
+            this.lblChoO.Text = "Chỗ ở hiện tại";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(123, 121);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(352, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // txtDienThoai
+            // 
+            this.txtDienThoai.Location = new System.Drawing.Point(376, 58);
+            this.txtDienThoai.Name = "txtDienThoai";
+            this.txtDienThoai.Size = new System.Drawing.Size(100, 20);
+            this.txtDienThoai.TabIndex = 4;
             // 
             // grbThongTinCaNhan
             // 
@@ -89,19 +214,12 @@
             this.grbThongTinCaNhan.Controls.Add(this.lblHoTen);
             this.grbThongTinCaNhan.Controls.Add(this.txtEmail);
             this.grbThongTinCaNhan.Controls.Add(this.lblEmail);
-            this.grbThongTinCaNhan.Location = new System.Drawing.Point(12, 36);
+            this.grbThongTinCaNhan.Location = new System.Drawing.Point(7, 44);
             this.grbThongTinCaNhan.Name = "grbThongTinCaNhan";
             this.grbThongTinCaNhan.Size = new System.Drawing.Size(494, 147);
-            this.grbThongTinCaNhan.TabIndex = 2;
+            this.grbThongTinCaNhan.TabIndex = 6;
             this.grbThongTinCaNhan.TabStop = false;
             this.grbThongTinCaNhan.Text = "Thông tin cá nhân";
-            // 
-            // txtDienThoai
-            // 
-            this.txtDienThoai.Location = new System.Drawing.Point(376, 58);
-            this.txtDienThoai.Name = "txtDienThoai";
-            this.txtDienThoai.Size = new System.Drawing.Size(100, 20);
-            this.txtDienThoai.TabIndex = 4;
             // 
             // label5
             // 
@@ -187,22 +305,12 @@
             this.grbThongTinDoanHoi.Controls.Add(this.chkHoiVien);
             this.grbThongTinDoanHoi.Controls.Add(this.chkDangVien);
             this.grbThongTinDoanHoi.Controls.Add(this.chkDoanVien);
-            this.grbThongTinDoanHoi.Location = new System.Drawing.Point(13, 189);
+            this.grbThongTinDoanHoi.Location = new System.Drawing.Point(8, 197);
             this.grbThongTinDoanHoi.Name = "grbThongTinDoanHoi";
             this.grbThongTinDoanHoi.Size = new System.Drawing.Size(235, 83);
-            this.grbThongTinDoanHoi.TabIndex = 3;
+            this.grbThongTinDoanHoi.TabIndex = 7;
             this.grbThongTinDoanHoi.TabStop = false;
             this.grbThongTinDoanHoi.Text = "Thông tin Đoàn Hội";
-            // 
-            // chkHoiVien
-            // 
-            this.chkHoiVien.AutoSize = true;
-            this.chkHoiVien.Location = new System.Drawing.Point(19, 58);
-            this.chkHoiVien.Name = "chkHoiVien";
-            this.chkHoiVien.Size = new System.Drawing.Size(80, 17);
-            this.chkHoiVien.TabIndex = 0;
-            this.chkHoiVien.Text = "Là Hội viên";
-            this.chkHoiVien.UseVisualStyleBackColor = true;
             // 
             // chkDangVien
             // 
@@ -224,135 +332,26 @@
             this.chkDoanVien.Text = "Là Đoàn viên";
             this.chkDoanVien.UseVisualStyleBackColor = true;
             // 
-            // grbThongTinHoiVien
-            // 
-            this.grbThongTinHoiVien.Controls.Add(this.txtChucVu);
-            this.grbThongTinHoiVien.Controls.Add(this.cboLoaiHoiVien);
-            this.grbThongTinHoiVien.Controls.Add(this.lblChucVu);
-            this.grbThongTinHoiVien.Controls.Add(this.lblLoaiHoiVien);
-            this.grbThongTinHoiVien.Location = new System.Drawing.Point(271, 189);
-            this.grbThongTinHoiVien.Name = "grbThongTinHoiVien";
-            this.grbThongTinHoiVien.Size = new System.Drawing.Size(235, 83);
-            this.grbThongTinHoiVien.TabIndex = 3;
-            this.grbThongTinHoiVien.TabStop = false;
-            this.grbThongTinHoiVien.Text = "Thông tin hội viên";
-            // 
-            // txtChucVu
-            // 
-            this.txtChucVu.Location = new System.Drawing.Point(117, 55);
-            this.txtChucVu.Name = "txtChucVu";
-            this.txtChucVu.Size = new System.Drawing.Size(100, 20);
-            this.txtChucVu.TabIndex = 4;
-            // 
-            // cboLoaiHoiVien
-            // 
-            this.cboLoaiHoiVien.FormattingEnabled = true;
-            this.cboLoaiHoiVien.Items.AddRange(new object[] {
-            "Bình thường",
-            "Chính thức"});
-            this.cboLoaiHoiVien.Location = new System.Drawing.Point(117, 16);
-            this.cboLoaiHoiVien.Name = "cboLoaiHoiVien";
-            this.cboLoaiHoiVien.Size = new System.Drawing.Size(100, 21);
-            this.cboLoaiHoiVien.TabIndex = 2;
-            // 
-            // lblChucVu
-            // 
-            this.lblChucVu.AutoSize = true;
-            this.lblChucVu.Location = new System.Drawing.Point(17, 58);
-            this.lblChucVu.Name = "lblChucVu";
-            this.lblChucVu.Size = new System.Drawing.Size(47, 13);
-            this.lblChucVu.TabIndex = 0;
-            this.lblChucVu.Text = "Chức vụ";
-            // 
-            // lblLoaiHoiVien
-            // 
-            this.lblLoaiHoiVien.AutoSize = true;
-            this.lblLoaiHoiVien.Location = new System.Drawing.Point(17, 19);
-            this.lblLoaiHoiVien.Name = "lblLoaiHoiVien";
-            this.lblLoaiHoiVien.Size = new System.Drawing.Size(67, 13);
-            this.lblLoaiHoiVien.TabIndex = 0;
-            this.lblLoaiHoiVien.Text = "Loại hội viên";
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(215, 295);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnLuu.TabIndex = 4;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Location = new System.Drawing.Point(326, 295);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 23);
-            this.btnHuy.TabIndex = 4;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Location = new System.Drawing.Point(431, 295);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 23);
-            this.btnThoat.TabIndex = 4;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            // 
-            // lblChoO
-            // 
-            this.lblChoO.AutoSize = true;
-            this.lblChoO.Location = new System.Drawing.Point(20, 96);
-            this.lblChoO.Name = "lblChoO";
-            this.lblChoO.Size = new System.Drawing.Size(72, 13);
-            this.lblChoO.TabIndex = 5;
-            this.lblChoO.Text = "Chỗ ở hiện tại";
-            // 
-            // txtChoO
-            // 
-            this.txtChoO.Location = new System.Drawing.Point(123, 93);
-            this.txtChoO.Name = "txtChoO";
-            this.txtChoO.Size = new System.Drawing.Size(352, 20);
-            this.txtChoO.TabIndex = 6;
-            // 
-            // lblThuongTru
-            // 
-            this.lblThuongTru.AutoSize = true;
-            this.lblThuongTru.Location = new System.Drawing.Point(23, 128);
-            this.lblThuongTru.Name = "lblThuongTru";
-            this.lblThuongTru.Size = new System.Drawing.Size(91, 13);
-            this.lblThuongTru.TabIndex = 7;
-            this.lblThuongTru.Text = "Địa chỉ thường trú";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(123, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(352, 20);
-            this.textBox1.TabIndex = 8;
-            // 
-            // NhapHoiVienFrm
+            // CapNhatHoiVienFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 325);
+            this.ClientSize = new System.Drawing.Size(509, 330);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.grbThongTinHoiVien);
-            this.Controls.Add(this.grbThongTinDoanHoi);
-            this.Controls.Add(this.grbThongTinCaNhan);
             this.Controls.Add(this.lblTitle);
-            this.Name = "NhapHoiVienFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NhapHoiVienFrm";
+            this.Controls.Add(this.grbThongTinCaNhan);
+            this.Controls.Add(this.grbThongTinDoanHoi);
+            this.Name = "CapNhatHoiVienFrm";
+            this.Text = "CapNhatHoiVienFrm";
+            this.grbThongTinHoiVien.ResumeLayout(false);
+            this.grbThongTinHoiVien.PerformLayout();
             this.grbThongTinCaNhan.ResumeLayout(false);
             this.grbThongTinCaNhan.PerformLayout();
             this.grbThongTinDoanHoi.ResumeLayout(false);
             this.grbThongTinDoanHoi.PerformLayout();
-            this.grbThongTinHoiVien.ResumeLayout(false);
-            this.grbThongTinHoiVien.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,33 +359,34 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.GroupBox grbThongTinCaNhan;
-        private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.TextBox txtMSSV;
-        private System.Windows.Forms.Label lblHoTen;
-        private System.Windows.Forms.Label lblMSSV;
-        private System.Windows.Forms.ComboBox cboEmail_Domain;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label lblDienThoai;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtDienThoai;
-        private System.Windows.Forms.GroupBox grbThongTinDoanHoi;
-        private System.Windows.Forms.CheckBox chkHoiVien;
-        private System.Windows.Forms.CheckBox chkDangVien;
-        private System.Windows.Forms.CheckBox chkDoanVien;
-        private System.Windows.Forms.GroupBox grbThongTinHoiVien;
-        private System.Windows.Forms.ComboBox cboLoaiHoiVien;
-        private System.Windows.Forms.Label lblLoaiHoiVien;
         private System.Windows.Forms.TextBox txtChucVu;
-        private System.Windows.Forms.Label lblChucVu;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.ComboBox cboLoaiHoiVien;
+        private System.Windows.Forms.Label lblChucVu;
+        private System.Windows.Forms.Label lblLoaiHoiVien;
+        private System.Windows.Forms.Button btnCapNhat;
+        private System.Windows.Forms.CheckBox chkHoiVien;
+        private System.Windows.Forms.GroupBox grbThongTinHoiVien;
         private System.Windows.Forms.Label lblThuongTru;
         private System.Windows.Forms.TextBox txtChoO;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblChoO;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDienThoai;
+        private System.Windows.Forms.GroupBox grbThongTinCaNhan;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.Label lblDienThoai;
+        private System.Windows.Forms.TextBox txtMSSV;
+        private System.Windows.Forms.ComboBox cboEmail_Domain;
+        private System.Windows.Forms.Label lblMSSV;
+        private System.Windows.Forms.Label lblHoTen;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.GroupBox grbThongTinDoanHoi;
+        private System.Windows.Forms.CheckBox chkDangVien;
+        private System.Windows.Forms.CheckBox chkDoanVien;
+
     }
 }
