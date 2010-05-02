@@ -15,5 +15,20 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void lblDienThoai_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMSSV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDienThoai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

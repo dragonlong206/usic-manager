@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class NhapThuChiFrm : Form
+    public partial class NhapChuyenMonFrm : Form
     {
-        public NhapThuChiFrm()
+        public NhapChuyenMonFrm()
         {
             InitializeComponent();
         }

@@ -48,6 +48,7 @@
             this.DienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DRL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.btnXemDanhSach = new System.Windows.Forms.Button();
             this.grbTieuChi.SuspendLayout();
             this.grbKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSach)).BeginInit();
@@ -67,6 +68,7 @@
             // 
             // grbTieuChi
             // 
+            this.grbTieuChi.Controls.Add(this.btnXemDanhSach);
             this.grbTieuChi.Controls.Add(this.btnTim);
             this.grbTieuChi.Controls.Add(this.chkTimChinhXac);
             this.grbTieuChi.Controls.Add(this.txtMSSV);
@@ -84,9 +86,9 @@
             // 
             this.btnTim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTim.Location = new System.Drawing.Point(212, 59);
+            this.btnTim.Location = new System.Drawing.Point(52, 59);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(360, 23);
+            this.btnTim.Size = new System.Drawing.Size(77, 23);
             this.btnTim.TabIndex = 5;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
@@ -139,36 +141,36 @@
             this.grbKetQua.Controls.Add(this.btnInKetQua);
             this.grbKetQua.Controls.Add(this.btnXemChiTiet);
             this.grbKetQua.Controls.Add(this.dgvDanhSach);
-            this.grbKetQua.Location = new System.Drawing.Point(13, 152);
+            this.grbKetQua.Location = new System.Drawing.Point(13, 150);
             this.grbKetQua.Name = "grbKetQua";
-            this.grbKetQua.Size = new System.Drawing.Size(783, 361);
+            this.grbKetQua.Size = new System.Drawing.Size(783, 392);
             this.grbKetQua.TabIndex = 4;
             this.grbKetQua.TabStop = false;
             this.grbKetQua.Text = "Kết quả tra cứu";
             // 
             // btnLayEmail
             // 
-            this.btnLayEmail.Location = new System.Drawing.Point(105, 331);
+            this.btnLayEmail.Location = new System.Drawing.Point(106, 363);
             this.btnLayEmail.Name = "btnLayEmail";
-            this.btnLayEmail.Size = new System.Drawing.Size(114, 23);
+            this.btnLayEmail.Size = new System.Drawing.Size(112, 23);
             this.btnLayEmail.TabIndex = 3;
             this.btnLayEmail.Text = "Lấy danh sách email";
             this.btnLayEmail.UseVisualStyleBackColor = true;
             // 
             // btnInKetQua
             // 
-            this.btnInKetQua.Location = new System.Drawing.Point(243, 331);
+            this.btnInKetQua.Location = new System.Drawing.Point(244, 363);
             this.btnInKetQua.Name = "btnInKetQua";
-            this.btnInKetQua.Size = new System.Drawing.Size(91, 23);
+            this.btnInKetQua.Size = new System.Drawing.Size(89, 23);
             this.btnInKetQua.TabIndex = 2;
             this.btnInKetQua.Text = "In danh sách";
             this.btnInKetQua.UseVisualStyleBackColor = true;
             // 
             // btnXemChiTiet
             // 
-            this.btnXemChiTiet.Location = new System.Drawing.Point(7, 331);
+            this.btnXemChiTiet.Location = new System.Drawing.Point(8, 363);
             this.btnXemChiTiet.Name = "btnXemChiTiet";
-            this.btnXemChiTiet.Size = new System.Drawing.Size(75, 23);
+            this.btnXemChiTiet.Size = new System.Drawing.Size(73, 23);
             this.btnXemChiTiet.TabIndex = 1;
             this.btnXemChiTiet.Text = "Xem chi tiết";
             this.btnXemChiTiet.UseVisualStyleBackColor = true;
@@ -186,7 +188,7 @@
             this.DRL});
             this.dgvDanhSach.Location = new System.Drawing.Point(9, 20);
             this.dgvDanhSach.Name = "dgvDanhSach";
-            this.dgvDanhSach.Size = new System.Drawing.Size(768, 305);
+            this.dgvDanhSach.Size = new System.Drawing.Size(768, 337);
             this.dgvDanhSach.TabIndex = 0;
             this.dgvDanhSach.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSach_CellContentDoubleClick);
             // 
@@ -228,18 +230,27 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(721, 524);
+            this.btnThoat.Location = new System.Drawing.Point(721, 548);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
+            // btnXemDanhSach
+            // 
+            this.btnXemDanhSach.Location = new System.Drawing.Point(150, 59);
+            this.btnXemDanhSach.Name = "btnXemDanhSach";
+            this.btnXemDanhSach.Size = new System.Drawing.Size(185, 23);
+            this.btnXemDanhSach.TabIndex = 6;
+            this.btnXemDanhSach.Text = "Xem danh sách toàn bộ hội viên";
+            this.btnXemDanhSach.UseVisualStyleBackColor = true;
+            // 
             // TraCuuHoiVienFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 554);
+            this.ClientSize = new System.Drawing.Size(808, 571);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.grbKetQua);
             this.Controls.Add(this.grbTieuChi);
@@ -277,5 +288,6 @@
         private System.Windows.Forms.Button btnInKetQua;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnLayEmail;
+        private System.Windows.Forms.Button btnXemDanhSach;
     }
 }

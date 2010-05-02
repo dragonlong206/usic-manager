@@ -46,3 +46,32 @@ C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager
 C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.XoaHoiVienFrm.resources
 C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
 C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.DiemDanhFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.exe
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.pdb
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\bin\Debug\GUI.exe
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\bin\Debug\GUI.pdb
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\bin\Debug\BUS.dll
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\bin\Debug\DTO.dll
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\bin\Debug\BUS.pdb
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\bin\Debug\DTO.pdb
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\ResolveAssemblyReference.cache
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.CapNhatHoiVienFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.DiemDanhFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.MainForm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapBuoiSinhHoatFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapHoiVienFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.Properties.Resources.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.TraCuuHoiVienFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.XoaHoiVienFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapChiPhiFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapDiemFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapHoatDongFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapThachDauFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapThamGiaHoatDongFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapThamGiaSinhHoatFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapThangDiemFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapThuHangFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapChuyenMonFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.DiemDanhHoatDongFrm.resources
+E:\Long's Documents\hoc ki 6\NMCNPM\Checkout1\3.Source code\UsicManager\GUI\obj\Debug\GUI.CapNhatKetQuaThachDauFrm.resources

@@ -150,7 +150,7 @@
             // lblThuongTru
             // 
             this.lblThuongTru.AutoSize = true;
-            this.lblThuongTru.Location = new System.Drawing.Point(23, 128);
+            this.lblThuongTru.Location = new System.Drawing.Point(17, 124);
             this.lblThuongTru.Name = "lblThuongTru";
             this.lblThuongTru.Size = new System.Drawing.Size(91, 13);
             this.lblThuongTru.TabIndex = 7;
@@ -178,7 +178,7 @@
             // lblChoO
             // 
             this.lblChoO.AutoSize = true;
-            this.lblChoO.Location = new System.Drawing.Point(20, 96);
+            this.lblChoO.Location = new System.Drawing.Point(17, 96);
             this.lblChoO.Name = "lblChoO";
             this.lblChoO.Size = new System.Drawing.Size(72, 13);
             this.lblChoO.TabIndex = 5;
@@ -193,10 +193,11 @@
             // 
             // txtDienThoai
             // 
-            this.txtDienThoai.Location = new System.Drawing.Point(376, 58);
+            this.txtDienThoai.Location = new System.Drawing.Point(80, 58);
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(100, 20);
             this.txtDienThoai.TabIndex = 4;
+            this.txtDienThoai.TextChanged += new System.EventHandler(this.txtDienThoai_TextChanged);
             // 
             // grbThongTinCaNhan
             // 
@@ -207,13 +208,13 @@
             this.grbThongTinCaNhan.Controls.Add(this.txtDienThoai);
             this.grbThongTinCaNhan.Controls.Add(this.label5);
             this.grbThongTinCaNhan.Controls.Add(this.txtHoTen);
-            this.grbThongTinCaNhan.Controls.Add(this.lblDienThoai);
-            this.grbThongTinCaNhan.Controls.Add(this.txtMSSV);
             this.grbThongTinCaNhan.Controls.Add(this.cboEmail_Domain);
-            this.grbThongTinCaNhan.Controls.Add(this.lblMSSV);
             this.grbThongTinCaNhan.Controls.Add(this.lblHoTen);
+            this.grbThongTinCaNhan.Controls.Add(this.lblDienThoai);
             this.grbThongTinCaNhan.Controls.Add(this.txtEmail);
+            this.grbThongTinCaNhan.Controls.Add(this.lblMSSV);
             this.grbThongTinCaNhan.Controls.Add(this.lblEmail);
+            this.grbThongTinCaNhan.Controls.Add(this.txtMSSV);
             this.grbThongTinCaNhan.Location = new System.Drawing.Point(7, 44);
             this.grbThongTinCaNhan.Name = "grbThongTinCaNhan";
             this.grbThongTinCaNhan.Size = new System.Drawing.Size(494, 147);
@@ -224,7 +225,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(179, 61);
+            this.label5.Location = new System.Drawing.Point(362, 61);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 13);
             this.label5.TabIndex = 3;
@@ -232,7 +233,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(75, 19);
+            this.txtHoTen.Location = new System.Drawing.Point(258, 19);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(218, 20);
             this.txtHoTen.TabIndex = 1;
@@ -240,18 +241,20 @@
             // lblDienThoai
             // 
             this.lblDienThoai.AutoSize = true;
-            this.lblDienThoai.Location = new System.Drawing.Point(314, 61);
+            this.lblDienThoai.Location = new System.Drawing.Point(17, 61);
             this.lblDienThoai.Name = "lblDienThoai";
             this.lblDienThoai.Size = new System.Drawing.Size(55, 13);
             this.lblDienThoai.TabIndex = 0;
             this.lblDienThoai.Text = "Điện thoại";
+            this.lblDienThoai.Click += new System.EventHandler(this.lblDienThoai_Click);
             // 
             // txtMSSV
             // 
-            this.txtMSSV.Location = new System.Drawing.Point(375, 19);
+            this.txtMSSV.Location = new System.Drawing.Point(79, 19);
             this.txtMSSV.Name = "txtMSSV";
             this.txtMSSV.Size = new System.Drawing.Size(101, 20);
             this.txtMSSV.TabIndex = 1;
+            this.txtMSSV.TextChanged += new System.EventHandler(this.txtMSSV_TextChanged);
             // 
             // cboEmail_Domain
             // 
@@ -261,7 +264,7 @@
             "yahoo.com",
             "yahoo.com.vn",
             "student.hcmus.edu.vn"});
-            this.cboEmail_Domain.Location = new System.Drawing.Point(203, 57);
+            this.cboEmail_Domain.Location = new System.Drawing.Point(386, 57);
             this.cboEmail_Domain.Name = "cboEmail_Domain";
             this.cboEmail_Domain.Size = new System.Drawing.Size(90, 21);
             this.cboEmail_Domain.TabIndex = 2;
@@ -269,7 +272,7 @@
             // lblMSSV
             // 
             this.lblMSSV.AutoSize = true;
-            this.lblMSSV.Location = new System.Drawing.Point(332, 22);
+            this.lblMSSV.Location = new System.Drawing.Point(17, 22);
             this.lblMSSV.Name = "lblMSSV";
             this.lblMSSV.Size = new System.Drawing.Size(37, 13);
             this.lblMSSV.TabIndex = 0;
@@ -278,7 +281,7 @@
             // lblHoTen
             // 
             this.lblHoTen.AutoSize = true;
-            this.lblHoTen.Location = new System.Drawing.Point(17, 22);
+            this.lblHoTen.Location = new System.Drawing.Point(200, 22);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(39, 13);
             this.lblHoTen.TabIndex = 0;
@@ -286,7 +289,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(75, 58);
+            this.txtEmail.Location = new System.Drawing.Point(258, 58);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(104, 20);
             this.txtEmail.TabIndex = 1;
@@ -294,7 +297,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(17, 61);
+            this.lblEmail.Location = new System.Drawing.Point(200, 61);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(32, 13);
             this.lblEmail.TabIndex = 0;
