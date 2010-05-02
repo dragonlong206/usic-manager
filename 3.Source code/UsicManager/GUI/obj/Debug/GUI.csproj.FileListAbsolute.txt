@@ -12,3 +12,37 @@ E:\Long's Documents\hoc ki 6\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\D
 E:\Long's Documents\hoc ki 6\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapHoiVienFrm.resources
 E:\Long's Documents\hoc ki 6\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.MainForm.resources
 E:\Long's Documents\hoc ki 6\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapBuoiSinhHoatFrm.resources
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.exe
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.pdb
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\ResolveAssemblyReference.cache
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.MainForm.resources
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapBuoiSinhHoatFrm.resources
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapHoiVienFrm.resources
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.Properties.Resources.resources
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\bin\Debug\GUI.exe
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\bin\Debug\GUI.pdb
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\bin\Debug\BUS.dll
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\bin\Debug\DTO.dll
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\bin\Debug\BUS.pdb
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\bin\Debug\DTO.pdb
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.TraCuuHoiVienFrm.resources
+H:\NMCNPM\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.XoaHoiVienFrm.resources
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.exe
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.pdb
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\bin\Debug\GUI.exe
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\bin\Debug\GUI.pdb
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\bin\Debug\BUS.dll
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\bin\Debug\DTO.dll
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\bin\Debug\BUS.pdb
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\bin\Debug\DTO.pdb
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.CapNhatHoiVienFrm.resources
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.MainForm.resources
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapBuoiSinhHoatFrm.resources
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.NhapHoiVienFrm.resources
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.TraCuuHoiVienFrm.resources
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.XoaHoiVienFrm.resources
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Documents and Settings\Le Van Long\Desktop\Checkout\3.Source code\UsicManager\GUI\obj\Debug\GUI.DiemDanhFrm.resources
