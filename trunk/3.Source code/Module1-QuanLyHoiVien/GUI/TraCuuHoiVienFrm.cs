@@ -29,5 +29,12 @@ namespace GUI
             frm.MdiParent = this.MdiParent;
             frm.Show();
         }
+
+        private void btnXemDanhSach_Click(object sender, EventArgs e)
+        {
+            XemDanhSachHoiVienFrm frm = new XemDanhSachHoiVienFrm();
+            frm.MdiParent = this.MdiParent;
+            frm.Show();
+        }
     }
 }

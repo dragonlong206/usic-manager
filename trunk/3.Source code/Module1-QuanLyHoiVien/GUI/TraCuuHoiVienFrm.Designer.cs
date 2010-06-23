@@ -30,6 +30,7 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.grbTieuChi = new System.Windows.Forms.GroupBox();
+            this.btnXemDanhSach = new System.Windows.Forms.Button();
             this.btnTim = new System.Windows.Forms.Button();
             this.chkTimChinhXac = new System.Windows.Forms.CheckBox();
             this.txtMSSV = new System.Windows.Forms.TextBox();
@@ -48,7 +49,6 @@
             this.DienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DRL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnXemDanhSach = new System.Windows.Forms.Button();
             this.grbTieuChi.SuspendLayout();
             this.grbKetQua.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSach)).BeginInit();
@@ -81,6 +81,16 @@
             this.grbTieuChi.TabIndex = 3;
             this.grbTieuChi.TabStop = false;
             this.grbTieuChi.Text = "Tiêu chí tra cứu";
+            // 
+            // btnXemDanhSach
+            // 
+            this.btnXemDanhSach.Location = new System.Drawing.Point(150, 59);
+            this.btnXemDanhSach.Name = "btnXemDanhSach";
+            this.btnXemDanhSach.Size = new System.Drawing.Size(185, 23);
+            this.btnXemDanhSach.TabIndex = 6;
+            this.btnXemDanhSach.Text = "Xem danh sách toàn bộ hội viên";
+            this.btnXemDanhSach.UseVisualStyleBackColor = true;
+            this.btnXemDanhSach.Click += new System.EventHandler(this.btnXemDanhSach_Click);
             // 
             // btnTim
             // 
@@ -236,15 +246,6 @@
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
-            // 
-            // btnXemDanhSach
-            // 
-            this.btnXemDanhSach.Location = new System.Drawing.Point(150, 59);
-            this.btnXemDanhSach.Name = "btnXemDanhSach";
-            this.btnXemDanhSach.Size = new System.Drawing.Size(185, 23);
-            this.btnXemDanhSach.TabIndex = 6;
-            this.btnXemDanhSach.Text = "Xem danh sách toàn bộ hội viên";
-            this.btnXemDanhSach.UseVisualStyleBackColor = true;
             // 
             // TraCuuHoiVienFrm
             // 
