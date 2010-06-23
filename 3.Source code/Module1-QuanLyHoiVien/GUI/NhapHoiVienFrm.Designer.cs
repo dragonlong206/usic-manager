@@ -33,7 +33,7 @@
             this.chkDangVien = new System.Windows.Forms.CheckBox();
             this.chkDoanVien = new System.Windows.Forms.CheckBox();
             this.grbThongTinHoiVien = new System.Windows.Forms.GroupBox();
-            this.txtChucVu = new System.Windows.Forms.TextBox();
+            this.cboChucVu = new System.Windows.Forms.ComboBox();
             this.cboLoaiHoiVien = new System.Windows.Forms.ComboBox();
             this.lblChucVu = new System.Windows.Forms.Label();
             this.lblLoaiHoiVien = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.grbThongTinCaNhan = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDiaChiThuongTru = new System.Windows.Forms.TextBox();
             this.lblThuongTru = new System.Windows.Forms.Label();
             this.txtChoO = new System.Windows.Forms.TextBox();
             this.lblChoO = new System.Windows.Forms.Label();
@@ -56,9 +56,16 @@
             this.lblMSSV = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtMSSV = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lsvDanhSachHoiVien = new System.Windows.Forms.ListView();
+            this.STT = new System.Windows.Forms.ColumnHeader();
+            this.MSSV = new System.Windows.Forms.ColumnHeader();
+            this.HoTen = new System.Windows.Forms.ColumnHeader();
+            this.Email = new System.Windows.Forms.ColumnHeader();
             this.grbThongTinDoanHoi.SuspendLayout();
             this.grbThongTinHoiVien.SuspendLayout();
             this.grbThongTinCaNhan.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbThongTinDoanHoi
@@ -66,7 +73,7 @@
             this.grbThongTinDoanHoi.Controls.Add(this.chkHoiVien);
             this.grbThongTinDoanHoi.Controls.Add(this.chkDangVien);
             this.grbThongTinDoanHoi.Controls.Add(this.chkDoanVien);
-            this.grbThongTinDoanHoi.Location = new System.Drawing.Point(13, 189);
+            this.grbThongTinDoanHoi.Location = new System.Drawing.Point(13, 422);
             this.grbThongTinDoanHoi.Name = "grbThongTinDoanHoi";
             this.grbThongTinDoanHoi.Size = new System.Drawing.Size(235, 83);
             this.grbThongTinDoanHoi.TabIndex = 3;
@@ -105,26 +112,29 @@
             // 
             // grbThongTinHoiVien
             // 
-            this.grbThongTinHoiVien.Controls.Add(this.txtChucVu);
+            this.grbThongTinHoiVien.Controls.Add(this.cboChucVu);
             this.grbThongTinHoiVien.Controls.Add(this.cboLoaiHoiVien);
             this.grbThongTinHoiVien.Controls.Add(this.lblChucVu);
             this.grbThongTinHoiVien.Controls.Add(this.lblLoaiHoiVien);
-            this.grbThongTinHoiVien.Location = new System.Drawing.Point(271, 189);
+            this.grbThongTinHoiVien.Location = new System.Drawing.Point(273, 422);
             this.grbThongTinHoiVien.Name = "grbThongTinHoiVien";
             this.grbThongTinHoiVien.Size = new System.Drawing.Size(235, 83);
             this.grbThongTinHoiVien.TabIndex = 3;
             this.grbThongTinHoiVien.TabStop = false;
             this.grbThongTinHoiVien.Text = "Thông tin hội viên";
             // 
-            // txtChucVu
+            // cboChucVu
             // 
-            this.txtChucVu.Location = new System.Drawing.Point(117, 55);
-            this.txtChucVu.Name = "txtChucVu";
-            this.txtChucVu.Size = new System.Drawing.Size(100, 20);
-            this.txtChucVu.TabIndex = 4;
+            this.cboChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboChucVu.FormattingEnabled = true;
+            this.cboChucVu.Location = new System.Drawing.Point(117, 54);
+            this.cboChucVu.Name = "cboChucVu";
+            this.cboChucVu.Size = new System.Drawing.Size(100, 21);
+            this.cboChucVu.TabIndex = 3;
             // 
             // cboLoaiHoiVien
             // 
+            this.cboLoaiHoiVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLoaiHoiVien.FormattingEnabled = true;
             this.cboLoaiHoiVien.Items.AddRange(new object[] {
             "Bình thường",
@@ -154,30 +164,33 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(215, 295);
+            this.btnLuu.Location = new System.Drawing.Point(271, 517);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 4;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(326, 295);
+            this.btnHuy.Location = new System.Drawing.Point(351, 517);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 23);
             this.btnHuy.TabIndex = 4;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(431, 295);
+            this.btnThoat.Location = new System.Drawing.Point(432, 517);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // lblTitle
             // 
@@ -185,7 +198,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Blue;
-            this.lblTitle.Location = new System.Drawing.Point(119, 9);
+            this.lblTitle.Location = new System.Drawing.Point(120, 19);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(282, 24);
             this.lblTitle.TabIndex = 1;
@@ -193,7 +206,7 @@
             // 
             // grbThongTinCaNhan
             // 
-            this.grbThongTinCaNhan.Controls.Add(this.textBox1);
+            this.grbThongTinCaNhan.Controls.Add(this.txtDiaChiThuongTru);
             this.grbThongTinCaNhan.Controls.Add(this.lblThuongTru);
             this.grbThongTinCaNhan.Controls.Add(this.txtChoO);
             this.grbThongTinCaNhan.Controls.Add(this.lblChoO);
@@ -207,19 +220,19 @@
             this.grbThongTinCaNhan.Controls.Add(this.lblMSSV);
             this.grbThongTinCaNhan.Controls.Add(this.lblEmail);
             this.grbThongTinCaNhan.Controls.Add(this.txtMSSV);
-            this.grbThongTinCaNhan.Location = new System.Drawing.Point(13, 36);
+            this.grbThongTinCaNhan.Location = new System.Drawing.Point(12, 258);
             this.grbThongTinCaNhan.Name = "grbThongTinCaNhan";
             this.grbThongTinCaNhan.Size = new System.Drawing.Size(494, 147);
             this.grbThongTinCaNhan.TabIndex = 7;
             this.grbThongTinCaNhan.TabStop = false;
             this.grbThongTinCaNhan.Text = "Thông tin cá nhân";
             // 
-            // textBox1
+            // txtDiaChiThuongTru
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(352, 20);
-            this.textBox1.TabIndex = 8;
+            this.txtDiaChiThuongTru.Location = new System.Drawing.Point(123, 121);
+            this.txtDiaChiThuongTru.Name = "txtDiaChiThuongTru";
+            this.txtDiaChiThuongTru.Size = new System.Drawing.Size(352, 20);
+            this.txtDiaChiThuongTru.TabIndex = 8;
             // 
             // lblThuongTru
             // 
@@ -281,6 +294,7 @@
             this.cboEmail_Domain.Name = "cboEmail_Domain";
             this.cboEmail_Domain.Size = new System.Drawing.Size(90, 21);
             this.cboEmail_Domain.TabIndex = 2;
+            this.cboEmail_Domain.Text = "gmail.com";
             // 
             // lblHoTen
             // 
@@ -332,11 +346,59 @@
             this.txtMSSV.Size = new System.Drawing.Size(101, 20);
             this.txtMSSV.TabIndex = 1;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lsvDanhSachHoiVien);
+            this.groupBox1.Location = new System.Drawing.Point(12, 55);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(494, 187);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Xem danh sách hội viên";
+            // 
+            // lsvDanhSachHoiVien
+            // 
+            this.lsvDanhSachHoiVien.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.STT,
+            this.MSSV,
+            this.HoTen,
+            this.Email});
+            this.lsvDanhSachHoiVien.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lsvDanhSachHoiVien.FullRowSelect = true;
+            this.lsvDanhSachHoiVien.GridLines = true;
+            this.lsvDanhSachHoiVien.Location = new System.Drawing.Point(3, 19);
+            this.lsvDanhSachHoiVien.Name = "lsvDanhSachHoiVien";
+            this.lsvDanhSachHoiVien.Size = new System.Drawing.Size(488, 165);
+            this.lsvDanhSachHoiVien.TabIndex = 0;
+            this.lsvDanhSachHoiVien.UseCompatibleStateImageBehavior = false;
+            this.lsvDanhSachHoiVien.View = System.Windows.Forms.View.Details;
+            // 
+            // STT
+            // 
+            this.STT.Text = "STT";
+            this.STT.Width = 36;
+            // 
+            // MSSV
+            // 
+            this.MSSV.Text = "MSSV";
+            this.MSSV.Width = 70;
+            // 
+            // HoTen
+            // 
+            this.HoTen.Text = "Họ Tên";
+            this.HoTen.Width = 150;
+            // 
+            // Email
+            // 
+            this.Email.Text = "Email";
+            this.Email.Width = 205;
+            // 
             // NhapHoiVienFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 325);
+            this.ClientSize = new System.Drawing.Size(518, 551);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grbThongTinCaNhan);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnHuy);
@@ -347,12 +409,14 @@
             this.Name = "NhapHoiVienFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NhapHoiVienFrm";
+            this.Load += new System.EventHandler(this.NhapHoiVienFrm_Load);
             this.grbThongTinDoanHoi.ResumeLayout(false);
             this.grbThongTinDoanHoi.PerformLayout();
             this.grbThongTinHoiVien.ResumeLayout(false);
             this.grbThongTinHoiVien.PerformLayout();
             this.grbThongTinCaNhan.ResumeLayout(false);
             this.grbThongTinCaNhan.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,14 +431,13 @@
         private System.Windows.Forms.GroupBox grbThongTinHoiVien;
         private System.Windows.Forms.ComboBox cboLoaiHoiVien;
         private System.Windows.Forms.Label lblLoaiHoiVien;
-        private System.Windows.Forms.TextBox txtChucVu;
         private System.Windows.Forms.Label lblChucVu;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.GroupBox grbThongTinCaNhan;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDiaChiThuongTru;
         private System.Windows.Forms.Label lblThuongTru;
         private System.Windows.Forms.TextBox txtChoO;
         private System.Windows.Forms.Label lblChoO;
@@ -388,5 +451,12 @@
         private System.Windows.Forms.Label lblMSSV;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtMSSV;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListView lsvDanhSachHoiVien;
+        private System.Windows.Forms.ColumnHeader STT;
+        private System.Windows.Forms.ColumnHeader MSSV;
+        private System.Windows.Forms.ColumnHeader HoTen;
+        private System.Windows.Forms.ColumnHeader Email;
+        private System.Windows.Forms.ComboBox cboChucVu;
     }
 }
