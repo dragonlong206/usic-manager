@@ -9,7 +9,8 @@ namespace DTO
     {
         #region Properties.
         private int _intMaLoai;        
-        private String _strTenLoai;        
+        private String _strTenLoai;
+        private String _strMoTa;       
         #endregion
 
         #region PublicAcess.
@@ -24,6 +25,12 @@ namespace DTO
             get { return _strTenLoai; }
             set { _strTenLoai = value; }
         }
+
+        public String MoTa
+        {
+            get { return _strMoTa; }
+            set { _strMoTa = value; }
+        }
         #endregion
 
         #region Construction.
@@ -31,6 +38,7 @@ namespace DTO
         {
             _intMaLoai = 0;
             _strTenLoai = String.Empty;
+            _strMoTa = String.Empty;
         }
         #endregion
     }
