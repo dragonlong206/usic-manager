@@ -141,7 +141,7 @@
             this.cboTieuChiTimKiem.FormattingEnabled = true;
             this.cboTieuChiTimKiem.Items.AddRange(new object[] {
             "MSSV",
-            "Họ Tên"});
+            "Họ tên"});
             this.cboTieuChiTimKiem.Location = new System.Drawing.Point(21, 23);
             this.cboTieuChiTimKiem.Name = "cboTieuChiTimKiem";
             this.cboTieuChiTimKiem.Size = new System.Drawing.Size(104, 21);

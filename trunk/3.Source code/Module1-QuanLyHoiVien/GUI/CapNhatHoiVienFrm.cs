@@ -248,18 +248,16 @@ namespace GUI
                     else
                         strTieuChiTimKiem += " [MSSV] Like '%" + txtGiaTriTimKiem.Text + "%'";
                 }
-                if(cboTieuChiTimKiem.Text == "Họ Tên")
+                if(cboTieuChiTimKiem.Text == "Họ tên")
                 {
                     if (chk_TimChinhXac.CheckState == CheckState.Checked)
                         strTieuChiTimKiem += " [HoTen] = '" + txtGiaTriTimKiem.Text + "'";
                     else
                         strTieuChiTimKiem += " [HoTen] Like '%" + txtGiaTriTimKiem.Text + "%'";
                 }
-            }  
-            else
-            {
-                strTieuChiTimKiem += "[MSSV] = [MSSV]";
             }
+            if (strTieuChiTimKiem == String.Empty)
+                strTieuChiTimKiem = "[MSSV] = [MSSV]";
 
             return strTieuChiTimKiem;
         }
