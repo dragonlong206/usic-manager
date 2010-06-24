@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucVuDAO.cs" />
+    <Compile Include="VaiTroDAO.cs" />
     <Compile Include="HoiVienDAO.cs" />
     <Compile Include="LoaiHoiVienDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -36,12 +36,12 @@ namespace GUI
                 }
 
                 //Load danh sach chuc vu.
-                List<ChucVuDTO> lstChucVu = ChucVuBUS.LayDanhSachChucVu();
-                if (lstChucVu.Count > 0)
+                List<VaiTroDTO> lstVaiTro = VaiTroBUS.LayDanhSachVaiTro();
+                if (lstVaiTro.Count > 0)
                 {
-                    this.cboChucVu.DataSource = lstChucVu;
-                    this.cboChucVu.DisplayMember = "TenChucVu";
-                    this.cboChucVu.ValueMember = "MaChucVu";
+                    this.cboVaiTro.DataSource = lstVaiTro;
+                    this.cboVaiTro.DisplayMember = "TenVaiTro";
+                    this.cboVaiTro.ValueMember = "MaVaiTro";
                 }
 
             }
@@ -89,7 +89,7 @@ namespace GUI
             chkHoiVien.CheckState = CheckState.Unchecked;
             chkDangVien.CheckState = CheckState.Unchecked;
             cboLoaiHoiVien.Text = String.Empty;
-            cboChucVu.Text = String.Empty;
+            cboVaiTro.Text = String.Empty;
         }
         #endregion
 
@@ -140,7 +140,7 @@ namespace GUI
                 aHoiVien.LaDangVien = true;
             aHoiVien.ChoOHienNay = txtChoO.Text;
             aHoiVien.DiaChiThuongTru = txtDiaChiThuongTru.Text;
-            aHoiVien.MaChucVu = int.Parse(cboChucVu.SelectedValue.ToString());
+            aHoiVien.MaVaiTro = int.Parse(cboVaiTro.SelectedValue.ToString());
 
             return aHoiVien;
         }
@@ -159,7 +159,7 @@ namespace GUI
             blnKetQua &= !String.IsNullOrEmpty(cboLoaiHoiVien.Text);
             //blnKetQua &= !String.IsNullOrEmpty(txtChoO.Text);
             //blnKetQua &= !String.IsNullOrEmpty(txtDiaChiThuongTru.Text);
-            blnKetQua &= !String.IsNullOrEmpty(cboChucVu.Text);
+            blnKetQua &= !String.IsNullOrEmpty(cboVaiTro.Text);
             if (!blnKetQua)
             {
                 MessageBox.Show("Du lieu nhap vao khong day du\r\nVui long kiem tra lai");

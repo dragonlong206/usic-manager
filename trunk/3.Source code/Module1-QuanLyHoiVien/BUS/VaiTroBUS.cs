@@ -7,38 +7,38 @@ using DAO;
 
 namespace BUS
 {
-    public class ChucVuBUS
+    public class VaiTroBUS
     {
-        public static String LayTenChucVu(int nMaChucVu)
+        public static String LayTenVaiTro(int nMaVaiTro)
         {
-            String strTenChucVu = String.Empty;
+            String strTenVaiTro = String.Empty;
 
             try
             {
-                strTenChucVu = ChucVuDAO.LayTenChucVu(nMaChucVu);
+                strTenVaiTro = VaiTroDAO.LayTenVaiTro(nMaVaiTro);
             }
             catch (Exception ex)
             {
                 throw ex;
             }
 
-            return strTenChucVu;
+            return strTenVaiTro;
         }
 
-        public static List<ChucVuDTO> LayDanhSachChucVu()
+        public static List<VaiTroDTO> LayDanhSachVaiTro()
         {
-            List<ChucVuDTO> lstChucVu = new List<ChucVuDTO>();
+            List<VaiTroDTO> lstVaiTro = new List<VaiTroDTO>();
 
             try
             {
-                lstChucVu = ChucVuDAO.LayDanhSachChucVu();
+                lstVaiTro = VaiTroDAO.LayDanhSachVaiTro();
             }
             catch (Exception ex)
             {
                 throw ex;
             }
 
-            return lstChucVu;
+            return lstVaiTro;
         }
     }
 }

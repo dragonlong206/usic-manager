@@ -133,39 +133,39 @@ namespace GUI
                 {                    
                     if(txtGiaTriTimKiem.Text.ToLower() == "ban quản lý")
                     {
-                        strTieuChiTimKiem += "[MaChucVu] > 19";
+                        strTieuChiTimKiem += "[MaVaiTro] > 19";
                     }
                     else if(txtGiaTriTimKiem.Text.ToLower() == "ban nhân sự")
                     {
-                        strTieuChiTimKiem += "([MaChucVu] / 10) = 2";
+                        strTieuChiTimKiem += "([MaVaiTro] / 10) = 2";
                     }
                     else if (txtGiaTriTimKiem.Text.ToLower() == "ban chuyên môn")
                     {
-                        strTieuChiTimKiem += "([MaChucVu] / 10) = 3";
+                        strTieuChiTimKiem += "([MaVaiTro] / 10) = 3";
                     }
                     else if (txtGiaTriTimKiem.Text.ToLower() == "ban tài chính")
                     {
-                        strTieuChiTimKiem += "([MaChucVu] / 10) = 4";
+                        strTieuChiTimKiem += "([MaVaiTro] / 10) = 4";
                     }
                     else if (txtGiaTriTimKiem.Text.ToLower() == "ban thông tin")
                     {
-                        strTieuChiTimKiem += "([MaChucVu] / 10) = 5";
+                        strTieuChiTimKiem += "([MaVaiTro] / 10) = 5";
                     }
                     else if (txtGiaTriTimKiem.Text.ToLower() == "ban chủ nhiệm")
                     {                        
-                        strTieuChiTimKiem += "[MaChucVu] > 99";
+                        strTieuChiTimKiem += "[MaVaiTro] > 99";
                     }
                     else
                     {
-                        List<ChucVuDTO> lstChucVu = ChucVuBUS.LayDanhSachChucVu();
-                        foreach (ChucVuDTO aChucVu in lstChucVu)
+                        List<VaiTroDTO> lstVaiTro = VaiTroBUS.LayDanhSachVaiTro();
+                        foreach (VaiTroDTO aVaiTro in lstVaiTro)
                         {
                             Boolean blnKiemTra = false;
-                            blnKiemTra |= aChucVu.TenChucVu.ToLower().Contains(txtGiaTriTimKiem.Text.ToLower());
-                            blnKiemTra |= (aChucVu.TenChucVu.ToLower() == txtGiaTriTimKiem.Text.ToLower());
+                            blnKiemTra |= aVaiTro.TenVaiTro.ToLower().Contains(txtGiaTriTimKiem.Text.ToLower());
+                            blnKiemTra |= (aVaiTro.TenVaiTro.ToLower() == txtGiaTriTimKiem.Text.ToLower());
                             if (blnKiemTra)
                             {                                
-                                strTieuChiTimKiem += "[MaChucVu] = " + aChucVu.MaChucVu;
+                                strTieuChiTimKiem += "[MaVaiTro] = " + aVaiTro.MaVaiTro;
                                 break;
                             }
                         }  

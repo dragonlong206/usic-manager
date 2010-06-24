@@ -107,5 +107,11 @@ namespace GUI
             frm.Show();
         }
 
+        private void môHìnhQuảnLýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DieuChinhCoCauFrm frm = new DieuChinhCoCauFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }        
     }
 }
