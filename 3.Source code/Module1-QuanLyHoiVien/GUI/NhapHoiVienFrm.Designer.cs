@@ -33,7 +33,7 @@
             this.chkDangVien = new System.Windows.Forms.CheckBox();
             this.chkDoanVien = new System.Windows.Forms.CheckBox();
             this.grbThongTinHoiVien = new System.Windows.Forms.GroupBox();
-            this.cboChucVu = new System.Windows.Forms.ComboBox();
+            this.cboVaiTro = new System.Windows.Forms.ComboBox();
             this.cboLoaiHoiVien = new System.Windows.Forms.ComboBox();
             this.lblChucVu = new System.Windows.Forms.Label();
             this.lblLoaiHoiVien = new System.Windows.Forms.Label();
@@ -112,7 +112,7 @@
             // 
             // grbThongTinHoiVien
             // 
-            this.grbThongTinHoiVien.Controls.Add(this.cboChucVu);
+            this.grbThongTinHoiVien.Controls.Add(this.cboVaiTro);
             this.grbThongTinHoiVien.Controls.Add(this.cboLoaiHoiVien);
             this.grbThongTinHoiVien.Controls.Add(this.lblChucVu);
             this.grbThongTinHoiVien.Controls.Add(this.lblLoaiHoiVien);
@@ -123,14 +123,14 @@
             this.grbThongTinHoiVien.TabStop = false;
             this.grbThongTinHoiVien.Text = "Thông tin hội viên";
             // 
-            // cboChucVu
+            // cboVaiTro
             // 
-            this.cboChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboChucVu.FormattingEnabled = true;
-            this.cboChucVu.Location = new System.Drawing.Point(117, 54);
-            this.cboChucVu.Name = "cboChucVu";
-            this.cboChucVu.Size = new System.Drawing.Size(100, 21);
-            this.cboChucVu.TabIndex = 3;
+            this.cboVaiTro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboVaiTro.FormattingEnabled = true;
+            this.cboVaiTro.Location = new System.Drawing.Point(117, 54);
+            this.cboVaiTro.Name = "cboVaiTro";
+            this.cboVaiTro.Size = new System.Drawing.Size(100, 21);
+            this.cboVaiTro.TabIndex = 3;
             // 
             // cboLoaiHoiVien
             // 
@@ -149,9 +149,9 @@
             this.lblChucVu.AutoSize = true;
             this.lblChucVu.Location = new System.Drawing.Point(17, 58);
             this.lblChucVu.Name = "lblChucVu";
-            this.lblChucVu.Size = new System.Drawing.Size(47, 13);
+            this.lblChucVu.Size = new System.Drawing.Size(37, 13);
             this.lblChucVu.TabIndex = 0;
-            this.lblChucVu.Text = "Chức vụ";
+            this.lblChucVu.Text = "Vai trò";
             // 
             // lblLoaiHoiVien
             // 
@@ -457,6 +457,6 @@
         private System.Windows.Forms.ColumnHeader MSSV;
         private System.Windows.Forms.ColumnHeader HoTen;
         private System.Windows.Forms.ColumnHeader Email;
-        private System.Windows.Forms.ComboBox cboChucVu;
+        private System.Windows.Forms.ComboBox cboVaiTro;
     }
 }

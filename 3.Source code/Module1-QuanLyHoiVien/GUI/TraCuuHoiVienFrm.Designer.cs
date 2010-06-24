@@ -231,9 +231,9 @@
             // 
             // btn_Tim
             // 
-            this.btn_Tim.Location = new System.Drawing.Point(241, 63);
+            this.btn_Tim.Location = new System.Drawing.Point(264, 63);
             this.btn_Tim.Name = "btn_Tim";
-            this.btn_Tim.Size = new System.Drawing.Size(121, 23);
+            this.btn_Tim.Size = new System.Drawing.Size(75, 23);
             this.btn_Tim.TabIndex = 37;
             this.btn_Tim.Text = "Tìm kiếm";
             this.btn_Tim.UseVisualStyleBackColor = true;
@@ -247,7 +247,7 @@
             "MSSV",
             "Họ tên",
             "Loại hội viên",
-            "Chức vụ",
+            "Vai trò",
             "Chuyên môn",
             "Cấp bậc chuyên môn"});
             this.cboTieuChiTimKiem.Location = new System.Drawing.Point(13, 33);

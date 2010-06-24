@@ -28,7 +28,7 @@ namespace DAO
                 sqlParams.Add(new SqlParameter("@LaDangVien", aHoiVien.LaDangVien));
                 sqlParams.Add(new SqlParameter("@ChoOHienNay", aHoiVien.ChoOHienNay));
                 sqlParams.Add(new SqlParameter("@DiaChiThuongTru", aHoiVien.DiaChiThuongTru));
-                sqlParams.Add(new SqlParameter("@MaChucVu", aHoiVien.MaChucVu));
+                sqlParams.Add(new SqlParameter("@MaVaiTro", aHoiVien.MaVaiTro));
 
                 int n = SqlDataAccessHelper.ExcuteNonQuery(spName, sqlParams);
                 if (n == 1)
@@ -78,7 +78,7 @@ namespace DAO
                 sqlParams.Add(new SqlParameter("@LaDangVien", aHoiVien.LaDangVien));
                 sqlParams.Add(new SqlParameter("@ChoOHienNay", aHoiVien.ChoOHienNay));
                 sqlParams.Add(new SqlParameter("@DiaChiThuongTru", aHoiVien.DiaChiThuongTru));
-                sqlParams.Add(new SqlParameter("@MaChucVu", aHoiVien.MaChucVu));
+                sqlParams.Add(new SqlParameter("@MaVaiTro", aHoiVien.MaVaiTro));
 
                 int n = SqlDataAccessHelper.ExcuteNonQuery(spName, sqlParams);
                 if (n == 1)
@@ -153,7 +153,7 @@ namespace DAO
             aHoiVien.MaLoaiHoiVien = int.Parse(aRow["MaLoaiHoiVien"].ToString());            
             aHoiVien.ChoOHienNay = aRow["ChoOHienNay"].ToString();
             aHoiVien.DiaChiThuongTru = aRow["DiaChiThuongTru"].ToString();
-            aHoiVien.MaChucVu = int.Parse(aRow["MaChucVu"].ToString());
+            aHoiVien.MaVaiTro = int.Parse(aRow["MaVaiTro"].ToString());
 
             return aHoiVien;
         }

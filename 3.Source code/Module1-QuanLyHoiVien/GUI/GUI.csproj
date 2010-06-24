@@ -72,6 +72,12 @@
     <Compile Include="DiemDanhHoatDongFrm.Designer.cs">
       <DependentUpon>DiemDanhHoatDongFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DieuChinhCoCauFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DieuChinhCoCauFrm.Designer.cs">
+      <DependentUpon>DieuChinhCoCauFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
@@ -161,6 +167,9 @@
     <EmbeddedResource Include="DiemDanhHoatDongFrm.resx">
       <DependentUpon>DiemDanhHoatDongFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DieuChinhCoCauFrm.resx">
+      <DependentUpon>DieuChinhCoCauFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>

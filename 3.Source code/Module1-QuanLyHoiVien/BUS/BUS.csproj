@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucVuBUS.cs" />
+    <Compile Include="VaiTroBUS.cs" />
     <Compile Include="HoiVienBUS.cs" />
     <Compile Include="LoaiHoiVienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

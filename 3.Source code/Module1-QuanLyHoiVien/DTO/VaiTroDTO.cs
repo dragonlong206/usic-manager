@@ -5,25 +5,25 @@ using System.Text;
 
 namespace DTO
 {
-    public class ChucVuDTO
+    public class VaiTroDTO
     {
         #region Properties
-        private int _intMaChucVu;        
-        private String _strTenChucVu;        
+        private int _intMaVaiTro;        
+        private String _strTenVaiTro;        
         private String _strMoTa;        
         #endregion
 
         #region PublicAccess
-        public int MaChucVu
+        public int MaVaiTro
         {
-            get { return _intMaChucVu; }
-            set { _intMaChucVu = value; }
+            get { return _intMaVaiTro; }
+            set { _intMaVaiTro = value; }
         }
 
-        public String TenChucVu
+        public String TenVaiTro
         {
-            get { return _strTenChucVu; }
-            set { _strTenChucVu = value; }
+            get { return _strTenVaiTro; }
+            set { _strTenVaiTro = value; }
         }
 
         public String MoTa
@@ -34,10 +34,10 @@ namespace DTO
         #endregion
 
         #region Contructions
-        public ChucVuDTO()
+        public VaiTroDTO()
         {
-            _intMaChucVu = 0;
-            _strTenChucVu = String.Empty;
+            _intMaVaiTro = 0;
+            _strTenVaiTro = String.Empty;
             _strMoTa = String.Empty;
         }
         #endregion
