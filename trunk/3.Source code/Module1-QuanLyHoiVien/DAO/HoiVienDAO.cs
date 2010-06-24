@@ -40,7 +40,27 @@ namespace DAO
             }
             return blnKetQua;
         }
-        
+
+        public static Boolean XoaHoiVien(HoiVienDTO aHoiVien)
+        {
+            Boolean blnKetQua = false;
+            try
+            {
+                String spName = "sp_DeleteHOI_VIEN";
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+                sqlParams.Add(new SqlParameter("@MSSV", aHoiVien.MSSV));
+
+                int n = SqlDataAccessHelper.ExcuteNonQuery(spName, sqlParams);
+                if (n == 1)
+                    blnKetQua = true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return blnKetQua;
+        }   
+
         public static Boolean CapNhatHoiVien(HoiVienDTO aHoiVien)
         {
             Boolean blnKetQua = false;
@@ -69,27 +89,7 @@ namespace DAO
                 throw ex;
             }
             return blnKetQua;
-        }
-        
-        public static Boolean XoaHoiVien(HoiVienDTO aHoiVien)
-        {
-            Boolean blnKetQua = false;
-            try
-            {
-                String spName = "sp_DeleteHOI_VIENsByMSSV";  
-                List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@MSSV", aHoiVien.MSSV));
-                
-                int n = SqlDataAccessHelper.ExcuteNonQuery(spName, sqlParams);
-                if (n == 1)
-                    blnKetQua = true;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return blnKetQua;
-        }        
+        }                     
 
         public static List<HoiVienDTO> LayDanhSachHoiVien()
         {

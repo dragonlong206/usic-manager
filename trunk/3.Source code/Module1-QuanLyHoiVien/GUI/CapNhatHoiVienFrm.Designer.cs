@@ -33,6 +33,10 @@
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtGiaTriTimKiem = new System.Windows.Forms.TextBox();
+            this.cboTieuChiTimKiem = new System.Windows.Forms.ComboBox();
+            this.chk_TimChinhXac = new System.Windows.Forms.CheckBox();
+            this.btn_Tim = new System.Windows.Forms.Button();
             this.lsvDanhSachHoiVien = new System.Windows.Forms.ListView();
             this.STT = new System.Windows.Forms.ColumnHeader();
             this.MSSV = new System.Windows.Forms.ColumnHeader();
@@ -62,10 +66,6 @@
             this.chkHoiVien = new System.Windows.Forms.CheckBox();
             this.chkDangVien = new System.Windows.Forms.CheckBox();
             this.chkDoanVien = new System.Windows.Forms.CheckBox();
-            this.chk_TimChinhXac = new System.Windows.Forms.CheckBox();
-            this.btn_Tim = new System.Windows.Forms.Button();
-            this.cboTieuChiTimKiem = new System.Windows.Forms.ComboBox();
-            this.txtGiaTriTimKiem = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.grbThongTinCaNhan.SuspendLayout();
             this.grbThongTinHoiVien.SuspendLayout();
@@ -126,7 +126,46 @@
             this.groupBox1.Size = new System.Drawing.Size(494, 187);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Xem danh sách hội viên";
+            this.groupBox1.Text = "Tra cứu danh sách hội viên";
+            // 
+            // txtGiaTriTimKiem
+            // 
+            this.txtGiaTriTimKiem.Location = new System.Drawing.Point(134, 25);
+            this.txtGiaTriTimKiem.Name = "txtGiaTriTimKiem";
+            this.txtGiaTriTimKiem.Size = new System.Drawing.Size(157, 20);
+            this.txtGiaTriTimKiem.TabIndex = 36;
+            // 
+            // cboTieuChiTimKiem
+            // 
+            this.cboTieuChiTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTieuChiTimKiem.FormattingEnabled = true;
+            this.cboTieuChiTimKiem.Items.AddRange(new object[] {
+            "MSSV",
+            "Họ Tên"});
+            this.cboTieuChiTimKiem.Location = new System.Drawing.Point(21, 23);
+            this.cboTieuChiTimKiem.Name = "cboTieuChiTimKiem";
+            this.cboTieuChiTimKiem.Size = new System.Drawing.Size(104, 21);
+            this.cboTieuChiTimKiem.TabIndex = 35;
+            // 
+            // chk_TimChinhXac
+            // 
+            this.chk_TimChinhXac.AutoSize = true;
+            this.chk_TimChinhXac.Location = new System.Drawing.Point(387, 27);
+            this.chk_TimChinhXac.Name = "chk_TimChinhXac";
+            this.chk_TimChinhXac.Size = new System.Drawing.Size(94, 17);
+            this.chk_TimChinhXac.TabIndex = 34;
+            this.chk_TimChinhXac.Text = "Tì&m chính xác";
+            this.chk_TimChinhXac.UseVisualStyleBackColor = true;
+            // 
+            // btn_Tim
+            // 
+            this.btn_Tim.Location = new System.Drawing.Point(297, 23);
+            this.btn_Tim.Name = "btn_Tim";
+            this.btn_Tim.Size = new System.Drawing.Size(75, 23);
+            this.btn_Tim.TabIndex = 33;
+            this.btn_Tim.Text = "Tìm";
+            this.btn_Tim.UseVisualStyleBackColor = true;
+            this.btn_Tim.Click += new System.EventHandler(this.btn_Tim_Click);
             // 
             // lsvDanhSachHoiVien
             // 
@@ -399,45 +438,6 @@
             this.chkDoanVien.TabIndex = 0;
             this.chkDoanVien.Text = "Là Đoàn viên";
             this.chkDoanVien.UseVisualStyleBackColor = true;
-            // 
-            // chk_TimChinhXac
-            // 
-            this.chk_TimChinhXac.AutoSize = true;
-            this.chk_TimChinhXac.Location = new System.Drawing.Point(387, 27);
-            this.chk_TimChinhXac.Name = "chk_TimChinhXac";
-            this.chk_TimChinhXac.Size = new System.Drawing.Size(94, 17);
-            this.chk_TimChinhXac.TabIndex = 34;
-            this.chk_TimChinhXac.Text = "Tì&m chính xác";
-            this.chk_TimChinhXac.UseVisualStyleBackColor = true;
-            // 
-            // btn_Tim
-            // 
-            this.btn_Tim.Location = new System.Drawing.Point(297, 23);
-            this.btn_Tim.Name = "btn_Tim";
-            this.btn_Tim.Size = new System.Drawing.Size(75, 23);
-            this.btn_Tim.TabIndex = 33;
-            this.btn_Tim.Text = "Tìm";
-            this.btn_Tim.UseVisualStyleBackColor = true;
-            this.btn_Tim.Click += new System.EventHandler(this.btn_Tim_Click);
-            // 
-            // cboTieuChiTimKiem
-            // 
-            this.cboTieuChiTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTieuChiTimKiem.FormattingEnabled = true;
-            this.cboTieuChiTimKiem.Items.AddRange(new object[] {
-            "MSSV",
-            "Họ Tên"});
-            this.cboTieuChiTimKiem.Location = new System.Drawing.Point(21, 23);
-            this.cboTieuChiTimKiem.Name = "cboTieuChiTimKiem";
-            this.cboTieuChiTimKiem.Size = new System.Drawing.Size(104, 21);
-            this.cboTieuChiTimKiem.TabIndex = 35;
-            // 
-            // txtGiaTriTimKiem
-            // 
-            this.txtGiaTriTimKiem.Location = new System.Drawing.Point(134, 25);
-            this.txtGiaTriTimKiem.Name = "txtGiaTriTimKiem";
-            this.txtGiaTriTimKiem.Size = new System.Drawing.Size(157, 20);
-            this.txtGiaTriTimKiem.TabIndex = 36;
             // 
             // CapNhatHoiVienFrm
             // 
