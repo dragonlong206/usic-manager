@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapBacDTO.cs" />
+    <Compile Include="ChuyenMonDTO.cs" />
     <Compile Include="VaiTroDTO.cs" />
     <Compile Include="HoiVienDTO.cs" />
     <Compile Include="LoaiHoiVienDTO.cs" />

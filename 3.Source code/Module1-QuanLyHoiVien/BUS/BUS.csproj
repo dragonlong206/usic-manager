@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapBacBUS.cs" />
+    <Compile Include="ChuyenMonBUS.cs" />
     <Compile Include="VaiTroBUS.cs" />
     <Compile Include="HoiVienBUS.cs" />
     <Compile Include="LoaiHoiVienBUS.cs" />

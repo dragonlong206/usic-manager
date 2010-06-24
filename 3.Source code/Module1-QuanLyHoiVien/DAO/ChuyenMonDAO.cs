@@ -8,18 +8,18 @@ using DTO;
 
 namespace DAO
 {
-    public class VaiTroDAO
+    public class ChuyenMonDAO
     {
-        public static Boolean ThemVaiTro(VaiTroDTO aVaiTro)
+        public static Boolean ThemChuyenMon(ChuyenMonDTO aChuyenMon)
         {
             Boolean blnKetQua = false;
             try
             {
-                String spName = "sp_InsertVAI_TRO";
+                String spName = "sp_InsertCHUYEN_MON";
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@MaVaiTro", aVaiTro.MaVaiTro));
-                sqlParams.Add(new SqlParameter("@TenVaiTro", aVaiTro.TenVaiTro));
-                sqlParams.Add(new SqlParameter("@MoTa", aVaiTro.MoTa));                                                              
+                sqlParams.Add(new SqlParameter("@MaChuyenMon", aChuyenMon.MaChuyenMon));
+                sqlParams.Add(new SqlParameter("@TenChuyenMon", aChuyenMon.TenChuyenMon));
+                sqlParams.Add(new SqlParameter("@MoTa", aChuyenMon.MoTa));
 
                 int n = SqlDataAccessHelper.ExcuteNonQuery(spName, sqlParams);
                 if (n == 1)
@@ -32,14 +32,14 @@ namespace DAO
             return blnKetQua;
         }
 
-        public static Boolean XoaVaiTro(VaiTroDTO aVaiTro)
+        public static Boolean XoaChuyenMon(ChuyenMonDTO aChuyenMon)
         {
             Boolean blnKetQua = false;
             try
             {
-                String spName = "sp_DeleteVAI_TRO";
+                String spName = "sp_DeleteCHUYEN_MON";
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@MaVaiTro", aVaiTro.MaVaiTro));
+                sqlParams.Add(new SqlParameter("@MaChuyenMon", aChuyenMon.MaChuyenMon));
 
                 int n = SqlDataAccessHelper.ExcuteNonQuery(spName, sqlParams);
                 if (n == 1)
@@ -52,16 +52,16 @@ namespace DAO
             return blnKetQua;
         }
 
-        public static Boolean CapNhatVaiTro(VaiTroDTO aVaiTro)
+        public static Boolean CapNhatChuyenMon(ChuyenMonDTO aChuyenMon)
         {
             Boolean blnKetQua = false;
             try
             {
-                String spName = "sp_UpdateVAI_TRO";
+                String spName = "sp_UpdateCHUYEN_MON";
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@MaVaiTro", aVaiTro.MaVaiTro));
-                sqlParams.Add(new SqlParameter("@TenVaiTro", aVaiTro.TenVaiTro));
-                sqlParams.Add(new SqlParameter("@MoTa", aVaiTro.MoTa));      
+                sqlParams.Add(new SqlParameter("@MaChuyenMon", aChuyenMon.MaChuyenMon));
+                sqlParams.Add(new SqlParameter("@TenChuyenMon", aChuyenMon.TenChuyenMon));
+                sqlParams.Add(new SqlParameter("@MoTa", aChuyenMon.MoTa));
 
                 int n = SqlDataAccessHelper.ExcuteNonQuery(spName, sqlParams);
                 if (n == 1)
@@ -74,21 +74,21 @@ namespace DAO
             return blnKetQua;
         } 
 
-        public static String LayTenVaiTro(int intMaVaiTro)
+        public static String LayTenChuyenMon(int intMaChuyenMon)
         {
-            String strTenVaiTro = String.Empty;
+            String strTenChuyenMon = String.Empty;
 
             try
             {
-                String spName = "sp_SelectVAI_TRO";
+                String spName = "sp_SelectCHUYEN_MON";
                 List<SqlParameter> sqlParams = new List<SqlParameter>();
-                sqlParams.Add(new SqlParameter("@MaVaiTro", intMaVaiTro));
+                sqlParams.Add(new SqlParameter("@MaChuyenMon", intMaChuyenMon));
                 DataTable aTable = SqlDataAccessHelper.ExcuteQuery(spName, sqlParams);
 
                 if (aTable.Rows.Count == 1)
                 {
-                    VaiTroDTO aVaiTro = TaoDoiTuongDTO(aTable.Rows[0]);
-                    strTenVaiTro = aVaiTro.TenVaiTro;
+                    ChuyenMonDTO aChuyenMon = TaoDoiTuongDTO(aTable.Rows[0]);
+                    strTenChuyenMon = aChuyenMon.TenChuyenMon;
                 }
             }
             catch (Exception ex)
@@ -96,22 +96,22 @@ namespace DAO
                 throw ex;
             }
 
-            return strTenVaiTro;
+            return strTenChuyenMon;
         }
 
-        public static List<VaiTroDTO> LayDanhSachVaiTro()
+        public static List<ChuyenMonDTO> LayDanhSachChuyenMon()
         {
-            List<VaiTroDTO> lstVaiTro = new List<VaiTroDTO>();
+            List<ChuyenMonDTO> lstChuyenMon = new List<ChuyenMonDTO>();
 
             try
             {
-                String spName = "sp_SelectVAI_TROsAll";
+                String spName = "sp_SelectCHUYEN_MONsAll";
                 DataTable aTable = SqlDataAccessHelper.ExcuteQuery(spName, null);
 
                 foreach (DataRow aRow in aTable.Rows)
                 {
-                    VaiTroDTO aVaiTro = TaoDoiTuongDTO(aRow);
-                    lstVaiTro.Add(aVaiTro);
+                    ChuyenMonDTO aChuyenMon = TaoDoiTuongDTO(aRow);
+                    lstChuyenMon.Add(aChuyenMon);
                 }
             }
             catch (Exception ex)
@@ -119,17 +119,18 @@ namespace DAO
                 throw ex;
             }
 
-            return lstVaiTro;
+            return lstChuyenMon;
         }
 
-        public static VaiTroDTO TaoDoiTuongDTO(DataRow aRow)
+        public static ChuyenMonDTO TaoDoiTuongDTO(DataRow aRow)
         {
-            VaiTroDTO aVaiTro = new VaiTroDTO();
+            ChuyenMonDTO aChuyenMon = new ChuyenMonDTO();
 
-            aVaiTro.MaVaiTro = int.Parse(aRow["MaVaiTro"].ToString());
-            aVaiTro.TenVaiTro = aRow["TenVaiTro"].ToString();
+            aChuyenMon.MaChuyenMon = int.Parse(aRow["MaChuyenMon"].ToString());
+            aChuyenMon.TenChuyenMon = aRow["TenChuyenMon"].ToString();
+            aChuyenMon.MoTa = aRow["MoTa"].ToString();
 
-            return aVaiTro;
+            return aChuyenMon;
         }
     }
 }
