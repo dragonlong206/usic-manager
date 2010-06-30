@@ -129,7 +129,7 @@ namespace GUI
                         strTieuChiTimKiem += "[MaLoaiHoiVien] < [MaLoaiHoiVien]";
                     }
                 }
-                if (cboTieuChiTimKiem.Text == "Chức vụ")
+                if (cboTieuChiTimKiem.Text == "Vai trò")
                 {                    
                     if(txtGiaTriTimKiem.Text.ToLower() == "ban quản lý")
                     {
