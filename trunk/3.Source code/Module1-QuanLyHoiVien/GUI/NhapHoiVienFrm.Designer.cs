@@ -33,6 +33,8 @@
             this.chkDangVien = new System.Windows.Forms.CheckBox();
             this.chkDoanVien = new System.Windows.Forms.CheckBox();
             this.grbThongTinHoiVien = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboCapBac = new System.Windows.Forms.ComboBox();
             this.cboVaiTro = new System.Windows.Forms.ComboBox();
             this.cboLoaiHoiVien = new System.Windows.Forms.ComboBox();
             this.lblChucVu = new System.Windows.Forms.Label();
@@ -73,9 +75,9 @@
             this.grbThongTinDoanHoi.Controls.Add(this.chkHoiVien);
             this.grbThongTinDoanHoi.Controls.Add(this.chkDangVien);
             this.grbThongTinDoanHoi.Controls.Add(this.chkDoanVien);
-            this.grbThongTinDoanHoi.Location = new System.Drawing.Point(13, 422);
+            this.grbThongTinDoanHoi.Location = new System.Drawing.Point(12, 478);
             this.grbThongTinDoanHoi.Name = "grbThongTinDoanHoi";
-            this.grbThongTinDoanHoi.Size = new System.Drawing.Size(235, 83);
+            this.grbThongTinDoanHoi.Size = new System.Drawing.Size(494, 43);
             this.grbThongTinDoanHoi.TabIndex = 3;
             this.grbThongTinDoanHoi.TabStop = false;
             this.grbThongTinDoanHoi.Text = "Thông tin Đoàn Hội";
@@ -83,7 +85,7 @@
             // chkHoiVien
             // 
             this.chkHoiVien.AutoSize = true;
-            this.chkHoiVien.Location = new System.Drawing.Point(19, 58);
+            this.chkHoiVien.Location = new System.Drawing.Point(200, 19);
             this.chkHoiVien.Name = "chkHoiVien";
             this.chkHoiVien.Size = new System.Drawing.Size(80, 17);
             this.chkHoiVien.TabIndex = 0;
@@ -93,7 +95,7 @@
             // chkDangVien
             // 
             this.chkDangVien.AutoSize = true;
-            this.chkDangVien.Location = new System.Drawing.Point(132, 20);
+            this.chkDangVien.Location = new System.Drawing.Point(382, 19);
             this.chkDangVien.Name = "chkDangVien";
             this.chkDangVien.Size = new System.Drawing.Size(90, 17);
             this.chkDangVien.TabIndex = 0;
@@ -112,24 +114,44 @@
             // 
             // grbThongTinHoiVien
             // 
+            this.grbThongTinHoiVien.Controls.Add(this.label1);
+            this.grbThongTinHoiVien.Controls.Add(this.cboCapBac);
             this.grbThongTinHoiVien.Controls.Add(this.cboVaiTro);
             this.grbThongTinHoiVien.Controls.Add(this.cboLoaiHoiVien);
             this.grbThongTinHoiVien.Controls.Add(this.lblChucVu);
             this.grbThongTinHoiVien.Controls.Add(this.lblLoaiHoiVien);
-            this.grbThongTinHoiVien.Location = new System.Drawing.Point(273, 422);
+            this.grbThongTinHoiVien.Location = new System.Drawing.Point(12, 421);
             this.grbThongTinHoiVien.Name = "grbThongTinHoiVien";
-            this.grbThongTinHoiVien.Size = new System.Drawing.Size(235, 83);
+            this.grbThongTinHoiVien.Size = new System.Drawing.Size(494, 51);
             this.grbThongTinHoiVien.TabIndex = 3;
             this.grbThongTinHoiVien.TabStop = false;
             this.grbThongTinHoiVien.Text = "Thông tin hội viên";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(332, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Cấp bậc";
+            // 
+            // cboCapBac
+            // 
+            this.cboCapBac.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCapBac.FormattingEnabled = true;
+            this.cboCapBac.Location = new System.Drawing.Point(385, 21);
+            this.cboCapBac.Name = "cboCapBac";
+            this.cboCapBac.Size = new System.Drawing.Size(90, 21);
+            this.cboCapBac.TabIndex = 3;
             // 
             // cboVaiTro
             // 
             this.cboVaiTro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboVaiTro.FormattingEnabled = true;
-            this.cboVaiTro.Location = new System.Drawing.Point(117, 54);
+            this.cboVaiTro.Location = new System.Drawing.Point(230, 21);
             this.cboVaiTro.Name = "cboVaiTro";
-            this.cboVaiTro.Size = new System.Drawing.Size(100, 21);
+            this.cboVaiTro.Size = new System.Drawing.Size(96, 21);
             this.cboVaiTro.TabIndex = 3;
             // 
             // cboLoaiHoiVien
@@ -139,15 +161,15 @@
             this.cboLoaiHoiVien.Items.AddRange(new object[] {
             "Bình thường",
             "Chính thức"});
-            this.cboLoaiHoiVien.Location = new System.Drawing.Point(117, 16);
+            this.cboLoaiHoiVien.Location = new System.Drawing.Point(90, 21);
             this.cboLoaiHoiVien.Name = "cboLoaiHoiVien";
-            this.cboLoaiHoiVien.Size = new System.Drawing.Size(100, 21);
+            this.cboLoaiHoiVien.Size = new System.Drawing.Size(91, 21);
             this.cboLoaiHoiVien.TabIndex = 2;
             // 
             // lblChucVu
             // 
             this.lblChucVu.AutoSize = true;
-            this.lblChucVu.Location = new System.Drawing.Point(17, 58);
+            this.lblChucVu.Location = new System.Drawing.Point(187, 24);
             this.lblChucVu.Name = "lblChucVu";
             this.lblChucVu.Size = new System.Drawing.Size(37, 13);
             this.lblChucVu.TabIndex = 0;
@@ -156,7 +178,7 @@
             // lblLoaiHoiVien
             // 
             this.lblLoaiHoiVien.AutoSize = true;
-            this.lblLoaiHoiVien.Location = new System.Drawing.Point(17, 19);
+            this.lblLoaiHoiVien.Location = new System.Drawing.Point(17, 24);
             this.lblLoaiHoiVien.Name = "lblLoaiHoiVien";
             this.lblLoaiHoiVien.Size = new System.Drawing.Size(67, 13);
             this.lblLoaiHoiVien.TabIndex = 0;
@@ -164,7 +186,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(271, 517);
+            this.btnLuu.Location = new System.Drawing.Point(257, 527);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 4;
@@ -174,7 +196,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(351, 517);
+            this.btnHuy.Location = new System.Drawing.Point(344, 527);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 23);
             this.btnHuy.TabIndex = 4;
@@ -184,7 +206,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(432, 517);
+            this.btnThoat.Location = new System.Drawing.Point(431, 527);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 4;
@@ -261,9 +283,9 @@
             // 
             // txtDienThoai
             // 
-            this.txtDienThoai.Location = new System.Drawing.Point(80, 58);
+            this.txtDienThoai.Location = new System.Drawing.Point(90, 58);
             this.txtDienThoai.Name = "txtDienThoai";
-            this.txtDienThoai.Size = new System.Drawing.Size(100, 20);
+            this.txtDienThoai.Size = new System.Drawing.Size(91, 20);
             this.txtDienThoai.TabIndex = 4;
             // 
             // label5
@@ -277,9 +299,9 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(258, 19);
+            this.txtHoTen.Location = new System.Drawing.Point(245, 19);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(218, 20);
+            this.txtHoTen.Size = new System.Drawing.Size(231, 20);
             this.txtHoTen.TabIndex = 1;
             // 
             // cboEmail_Domain
@@ -316,9 +338,9 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(258, 58);
+            this.txtEmail.Location = new System.Drawing.Point(245, 58);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(104, 20);
+            this.txtEmail.Size = new System.Drawing.Size(117, 20);
             this.txtEmail.TabIndex = 1;
             // 
             // lblMSSV
@@ -341,9 +363,9 @@
             // 
             // txtMSSV
             // 
-            this.txtMSSV.Location = new System.Drawing.Point(79, 19);
+            this.txtMSSV.Location = new System.Drawing.Point(89, 19);
             this.txtMSSV.Name = "txtMSSV";
-            this.txtMSSV.Size = new System.Drawing.Size(101, 20);
+            this.txtMSSV.Size = new System.Drawing.Size(92, 20);
             this.txtMSSV.TabIndex = 1;
             // 
             // groupBox1
@@ -397,7 +419,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 551);
+            this.ClientSize = new System.Drawing.Size(518, 555);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grbThongTinCaNhan);
             this.Controls.Add(this.btnThoat);
@@ -458,5 +480,7 @@
         private System.Windows.Forms.ColumnHeader HoTen;
         private System.Windows.Forms.ColumnHeader Email;
         private System.Windows.Forms.ComboBox cboVaiTro;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboCapBac;
     }
 }

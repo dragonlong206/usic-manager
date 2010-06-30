@@ -126,7 +126,7 @@ namespace GUI
                     }
                     if(strTieuChiTimKiem == String.Empty)
                     {
-                        strTieuChiTimKiem += "[MaLoaiHoiVien] < [MaLoaiHoiVien]";
+                        strTieuChiTimKiem += "1 < 1";
                     }
                 }
                 if (cboTieuChiTimKiem.Text == "Vai trò")
@@ -178,11 +178,41 @@ namespace GUI
                 }
                 if(cboTieuChiTimKiem.Text == "Chuyên môn")
                 {
-                    MessageBox.Show("Chức năng tra cứu theo chuyên môn sẽ được cập nhật sau");
+                    List<ChuyenMonDTO> lstChuyenMon = ChuyenMonBUS.LayDanhSachChuyenMon();
+                    foreach (ChuyenMonDTO aChuyenMon in lstChuyenMon)
+                    {
+                        Boolean blnKiemTra = false;
+                        blnKiemTra |= aChuyenMon.TenChuyenMon.ToLower().Contains(txtGiaTriTimKiem.Text.ToLower());
+                        blnKiemTra |= (aChuyenMon.TenChuyenMon.ToLower() == txtGiaTriTimKiem.Text.ToLower());
+                        if (blnKiemTra)
+                        {
+                            strTieuChiTimKiem += "[MaCapBac] / 100 = " + aChuyenMon.MaChuyenMon;
+                            break;
+                        }
+                    }
+                    if (strTieuChiTimKiem == String.Empty)
+                    {
+                        strTieuChiTimKiem += "1 < 1";
+                    }
                 }
                 if(cboTieuChiTimKiem.Text == "Cấp bậc chuyên môn")
                 {
-                    MessageBox.Show("Chức năng tra cứu theo cấp bậc chuyên môn sẽ được cập nhật sau");
+                    List<CapBacDTO> lstCapBac = CapBacBUS.LayDanhSachCapBac();
+                    foreach (CapBacDTO aCapBac in lstCapBac)
+                    {
+                        Boolean blnKiemTra = false;
+                        blnKiemTra |= aCapBac.TenCapBac.ToLower().Contains(txtGiaTriTimKiem.Text.ToLower());
+                        blnKiemTra |= (aCapBac.TenCapBac.ToLower() == txtGiaTriTimKiem.Text.ToLower());
+                        if (blnKiemTra)
+                        {
+                            strTieuChiTimKiem += "[MaCapBac] = " + aCapBac.MaCapBac;
+                            break;
+                        }
+                    }
+                    if (strTieuChiTimKiem == String.Empty)
+                    {
+                        strTieuChiTimKiem += "1 < 1";
+                    }
                 }                
             }
 
