@@ -58,6 +58,8 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtMSSV = new System.Windows.Forms.TextBox();
             this.grbThongTinHoiVien = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboCapBac = new System.Windows.Forms.ComboBox();
             this.cboVaiTro = new System.Windows.Forms.ComboBox();
             this.cboLoaiHoiVien = new System.Windows.Forms.ComboBox();
             this.lblChucVu = new System.Windows.Forms.Label();
@@ -74,7 +76,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(433, 516);
+            this.btnThoat.Location = new System.Drawing.Point(432, 522);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 9;
@@ -84,7 +86,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(351, 516);
+            this.btnHuy.Location = new System.Drawing.Point(351, 522);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 23);
             this.btnHuy.TabIndex = 11;
@@ -94,7 +96,7 @@
             // 
             // btnCapNhat
             // 
-            this.btnCapNhat.Location = new System.Drawing.Point(270, 516);
+            this.btnCapNhat.Location = new System.Drawing.Point(270, 522);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(75, 23);
             this.btnCapNhat.TabIndex = 10;
@@ -350,39 +352,62 @@
             // 
             // grbThongTinHoiVien
             // 
+            this.grbThongTinHoiVien.Controls.Add(this.label1);
+            this.grbThongTinHoiVien.Controls.Add(this.cboCapBac);
             this.grbThongTinHoiVien.Controls.Add(this.cboVaiTro);
             this.grbThongTinHoiVien.Controls.Add(this.cboLoaiHoiVien);
             this.grbThongTinHoiVien.Controls.Add(this.lblChucVu);
             this.grbThongTinHoiVien.Controls.Add(this.lblLoaiHoiVien);
-            this.grbThongTinHoiVien.Location = new System.Drawing.Point(273, 417);
+            this.grbThongTinHoiVien.Location = new System.Drawing.Point(11, 416);
             this.grbThongTinHoiVien.Name = "grbThongTinHoiVien";
-            this.grbThongTinHoiVien.Size = new System.Drawing.Size(235, 83);
-            this.grbThongTinHoiVien.TabIndex = 12;
+            this.grbThongTinHoiVien.Size = new System.Drawing.Size(491, 51);
+            this.grbThongTinHoiVien.TabIndex = 17;
             this.grbThongTinHoiVien.TabStop = false;
             this.grbThongTinHoiVien.Text = "Thông tin hội viên";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(332, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Cấp bậc";
+            // 
+            // cboCapBac
+            // 
+            this.cboCapBac.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCapBac.FormattingEnabled = true;
+            this.cboCapBac.Location = new System.Drawing.Point(385, 21);
+            this.cboCapBac.Name = "cboCapBac";
+            this.cboCapBac.Size = new System.Drawing.Size(90, 21);
+            this.cboCapBac.TabIndex = 3;
             // 
             // cboVaiTro
             // 
             this.cboVaiTro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboVaiTro.FormattingEnabled = true;
-            this.cboVaiTro.Location = new System.Drawing.Point(117, 54);
+            this.cboVaiTro.Location = new System.Drawing.Point(230, 21);
             this.cboVaiTro.Name = "cboVaiTro";
-            this.cboVaiTro.Size = new System.Drawing.Size(100, 21);
+            this.cboVaiTro.Size = new System.Drawing.Size(96, 21);
             this.cboVaiTro.TabIndex = 3;
             // 
             // cboLoaiHoiVien
             // 
             this.cboLoaiHoiVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLoaiHoiVien.FormattingEnabled = true;
-            this.cboLoaiHoiVien.Location = new System.Drawing.Point(117, 16);
+            this.cboLoaiHoiVien.Items.AddRange(new object[] {
+            "Bình thường",
+            "Chính thức"});
+            this.cboLoaiHoiVien.Location = new System.Drawing.Point(90, 21);
             this.cboLoaiHoiVien.Name = "cboLoaiHoiVien";
-            this.cboLoaiHoiVien.Size = new System.Drawing.Size(100, 21);
+            this.cboLoaiHoiVien.Size = new System.Drawing.Size(91, 21);
             this.cboLoaiHoiVien.TabIndex = 2;
             // 
             // lblChucVu
             // 
             this.lblChucVu.AutoSize = true;
-            this.lblChucVu.Location = new System.Drawing.Point(17, 58);
+            this.lblChucVu.Location = new System.Drawing.Point(187, 24);
             this.lblChucVu.Name = "lblChucVu";
             this.lblChucVu.Size = new System.Drawing.Size(37, 13);
             this.lblChucVu.TabIndex = 0;
@@ -391,7 +416,7 @@
             // lblLoaiHoiVien
             // 
             this.lblLoaiHoiVien.AutoSize = true;
-            this.lblLoaiHoiVien.Location = new System.Drawing.Point(17, 19);
+            this.lblLoaiHoiVien.Location = new System.Drawing.Point(17, 24);
             this.lblLoaiHoiVien.Name = "lblLoaiHoiVien";
             this.lblLoaiHoiVien.Size = new System.Drawing.Size(67, 13);
             this.lblLoaiHoiVien.TabIndex = 0;
@@ -402,17 +427,17 @@
             this.grbThongTinDoanHoi.Controls.Add(this.chkHoiVien);
             this.grbThongTinDoanHoi.Controls.Add(this.chkDangVien);
             this.grbThongTinDoanHoi.Controls.Add(this.chkDoanVien);
-            this.grbThongTinDoanHoi.Location = new System.Drawing.Point(13, 417);
+            this.grbThongTinDoanHoi.Location = new System.Drawing.Point(11, 473);
             this.grbThongTinDoanHoi.Name = "grbThongTinDoanHoi";
-            this.grbThongTinDoanHoi.Size = new System.Drawing.Size(235, 83);
-            this.grbThongTinDoanHoi.TabIndex = 13;
+            this.grbThongTinDoanHoi.Size = new System.Drawing.Size(493, 43);
+            this.grbThongTinDoanHoi.TabIndex = 16;
             this.grbThongTinDoanHoi.TabStop = false;
             this.grbThongTinDoanHoi.Text = "Thông tin Đoàn Hội";
             // 
             // chkHoiVien
             // 
             this.chkHoiVien.AutoSize = true;
-            this.chkHoiVien.Location = new System.Drawing.Point(19, 58);
+            this.chkHoiVien.Location = new System.Drawing.Point(200, 19);
             this.chkHoiVien.Name = "chkHoiVien";
             this.chkHoiVien.Size = new System.Drawing.Size(80, 17);
             this.chkHoiVien.TabIndex = 0;
@@ -422,7 +447,7 @@
             // chkDangVien
             // 
             this.chkDangVien.AutoSize = true;
-            this.chkDangVien.Location = new System.Drawing.Point(132, 20);
+            this.chkDangVien.Location = new System.Drawing.Point(382, 19);
             this.chkDangVien.Name = "chkDangVien";
             this.chkDangVien.Size = new System.Drawing.Size(90, 17);
             this.chkDangVien.TabIndex = 0;
@@ -444,10 +469,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(518, 551);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.grbThongTinCaNhan);
             this.Controls.Add(this.grbThongTinHoiVien);
             this.Controls.Add(this.grbThongTinDoanHoi);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grbThongTinCaNhan);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnCapNhat);
@@ -496,7 +521,13 @@
         private System.Windows.Forms.Label lblMSSV;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtMSSV;
+        private System.Windows.Forms.TextBox txtGiaTriTimKiem;
+        private System.Windows.Forms.ComboBox cboTieuChiTimKiem;
+        private System.Windows.Forms.CheckBox chk_TimChinhXac;
+        private System.Windows.Forms.Button btn_Tim;
         private System.Windows.Forms.GroupBox grbThongTinHoiVien;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboCapBac;
         private System.Windows.Forms.ComboBox cboVaiTro;
         private System.Windows.Forms.ComboBox cboLoaiHoiVien;
         private System.Windows.Forms.Label lblChucVu;
@@ -505,10 +536,6 @@
         private System.Windows.Forms.CheckBox chkHoiVien;
         private System.Windows.Forms.CheckBox chkDangVien;
         private System.Windows.Forms.CheckBox chkDoanVien;
-        private System.Windows.Forms.TextBox txtGiaTriTimKiem;
-        private System.Windows.Forms.ComboBox cboTieuChiTimKiem;
-        private System.Windows.Forms.CheckBox chk_TimChinhXac;
-        private System.Windows.Forms.Button btn_Tim;
 
     }
 }

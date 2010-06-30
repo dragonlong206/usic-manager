@@ -18,7 +18,8 @@ namespace DTO
         private int _intMaLoaiHoiVien;
         private String _strChoOHienNay = String.Empty;        
         private String _strDiaChiThuongTru = String.Empty;
-        private int _intMaVaiTro; 
+        private int _intMaVaiTro;
+        private int _intMaCapBac;       
         #endregion               
 
         #region PublicAccess
@@ -87,6 +88,12 @@ namespace DTO
             get { return _intMaVaiTro; }
             set { _intMaVaiTro = value; }
         }
+
+        public int MaCapBac
+        {
+            get { return _intMaCapBac; }
+            set { _intMaCapBac = value; }
+        }
         #endregion
 
         #region Constructor
@@ -103,6 +110,7 @@ namespace DTO
             _strChoOHienNay = String.Empty;
             _strDiaChiThuongTru = String.Empty;
             _intMaVaiTro = 0;
+            _intMaCapBac = 0;
         }
         #endregion
     }

@@ -44,6 +44,14 @@ namespace GUI
                     this.cboVaiTro.ValueMember = "MaVaiTro";
                 }
 
+                //Load danh sach cap bac.
+                List<CapBacDTO> lstCapBac = CapBacBUS.LayDanhSachCapBac();
+                if (lstCapBac.Count > 0)
+                {
+                    this.cboCapBac.DataSource = lstCapBac;
+                    this.cboCapBac.DisplayMember = "TenCapBac";
+                    this.cboCapBac.ValueMember = "MaCapBac";
+                }
             }
             catch (System.Exception ex)
             {
@@ -81,15 +89,12 @@ namespace GUI
             txtMSSV.Text = String.Empty;
             txtHoTen.Text = String.Empty;
             txtDienThoai.Text = String.Empty;
-            txtEmail.Text = String.Empty;
-            //cboEmail_Domain.Text = String.Empty;
+            txtEmail.Text = String.Empty;            
             txtChoO.Text = String.Empty;
             txtDiaChiThuongTru.Text = String.Empty;
             chkDoanVien.CheckState = CheckState.Unchecked;
             chkHoiVien.CheckState = CheckState.Unchecked;
-            chkDangVien.CheckState = CheckState.Unchecked;
-            cboLoaiHoiVien.Text = String.Empty;
-            cboVaiTro.Text = String.Empty;
+            chkDangVien.CheckState = CheckState.Unchecked;            
         }
         #endregion
 
@@ -141,6 +146,7 @@ namespace GUI
             aHoiVien.ChoOHienNay = txtChoO.Text;
             aHoiVien.DiaChiThuongTru = txtDiaChiThuongTru.Text;
             aHoiVien.MaVaiTro = int.Parse(cboVaiTro.SelectedValue.ToString());
+            aHoiVien.MaCapBac = int.Parse(cboCapBac.SelectedValue.ToString());
 
             return aHoiVien;
         }
@@ -160,6 +166,7 @@ namespace GUI
             //blnKetQua &= !String.IsNullOrEmpty(txtChoO.Text);
             //blnKetQua &= !String.IsNullOrEmpty(txtDiaChiThuongTru.Text);
             blnKetQua &= !String.IsNullOrEmpty(cboVaiTro.Text);
+            blnKetQua &= !String.IsNullOrEmpty(cboCapBac.Text);
             if (!blnKetQua)
             {
                 MessageBox.Show("Du lieu nhap vao khong day du\r\nVui long kiem tra lai");
